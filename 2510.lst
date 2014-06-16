@@ -1,0 +1,1068 @@
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;**********************************************************************
+                      00002 ;   P R O G R A M M     MPPTnG                                        *
+                      00003 ;                                                                     *
+                      00004 ;   Traking program for MPPT new generation                           *
+                      00005 ;**********************************************************************
+                      00006 ;                                                                     *
+                      00007 ;    Filename:      2510.asm                                          *
+                      00008 ;    Date:          20.11.00                                          *
+                      00009 ;    Last Update:   19.09.02                                          *
+                      00010 ;    File Version:  V5.0                                              *
+                      00011 ;                                                                     *
+                      00012 ;    Author:        Michael Zürcher                                   *
+                      00013 ;                                                                     *
+                      00014 ;    Company:       HTA-Biel/Bienne Indulab                           *
+                      00015 ;                                                                     *
+                      00016 ;                                                                     *
+                      00017 ;**********************************************************************
+                      00018 ;                                                                     *
+                      00019 ;    Notes:                                                           *
+                      00020 ;    - Main program : mpptngV5.asm                                    *
+                      00021 ;                                                                     *
+                      00022 ;**********************************************************************
+                      00023 
+                      00024 
+                      00025 #define RESET2510       0xC0            ; MCP2510 reset instruction
+                      00026 #define READ2510        0x03            ; MCP2510 read instruction
+                      00027 #define WRITE2510       0x02            ; MCP2510 write instruction
+                      00028 #define RTS2510         0x80            ; MCP2510 request to send instruction
+                      00029 #define STATUS2510      0xA0            ; MCP2510 read status instruction
+                      00030 #define BITMODIFY2510   0x05            ; MCP2510 bit modify instruction
+                      00031 
+                      00032 
+                      00033 ;*******************************************************************
+                      00034 ;                 LOCAL MACROS                                 
+                      00035 ;*******************************************************************
+                      00036 
+                      00037 ;----------------------------------------------------------------------
+                      00038 ;               WRITE literal byte to MCP2510 register
+                      00039 ;
+                      00040 ;               IN: Reg         register address
+                      00041 ;                   LitData     data to write in the register
+                      00042 ;----------------------------------------------------------------------
+                      00043 SPI_WriteL      MACRO   Reg,LitData
+                      00044                 movlw   LitData
+                      00045                 movwf   RegData2510
+                      00046                 movlw   Reg
+                      00047                 call    Write2510
+                      00048                 ENDM
+                      00049 
+                      00050 ;----------------------------------------------------------------------
+                      00051 ;               WRITE data byte to MCP2510 register
+                      00052 ;
+                      00053 ;               IN: Reg         register address
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00054 ;                   RegData     data to write in the register
+                      00055 ;----------------------------------------------------------------------
+                      00056 SPI_WriteD      MACRO   Reg,RegData
+                      00057                 movf    RegData,W
+                      00058                 movwf   RegData2510
+                      00059                 movlw   Reg
+                      00060                 call    Write2510
+                      00061                 ENDM
+                      00062 
+                      00063 
+                      00064 ;**********************************************************************
+                      00065 ;               INIT MCP2510 CAN-Controller
+                      00066 ;
+                      00067 ;               Physical layer configuration:
+                      00068 ;               - Fosc       = 20 MHz
+                      00069 ;               - BRP        = 10
+                      00070 ;               - Sync Seg   = 1 Tq
+                      00071 ;               - Prop Seg   = 2 Tq
+                      00072 ;               - Phase Seg1 = 3 Tq
+                      00073 ;               - Phase Seg2 = 3 Tq
+                      00074 ;               - SJW        = 1 Tq
+                      00075 ;               - Bus line is sampled once at the sample point
+                      00076 ;               - wake-up filter disable
+                      00077 ;**********************************************************************
+                      00078 
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00079 Init2510        call    Reset2510
+                      00080 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00081                 movlw   B'00000011'     ; mask bit CLKOUT
+Error[113]  : Symbol not previously defined (RegMask2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00082                 movwf   RegMask2510
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00083                 movlw   B'00000010'     ; CLKOUT pin enable / clk:4
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00084                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CANCTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00085                 movlw   CANCTRL         ; CAN control register of MCP2510
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00086                 call    BitMod2510
+                      00087 
+                      00088                 SPI_WriteL CNF1,B'00000100'     ; config register 1 of MCP2510 (Bitiming)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000100'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[113]  : Symbol not previously defined (CNF1)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   CNF1
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00089 
+                      00090                 SPI_WriteL CNF2,B'10001110'     ; config register 2 of MCP2510
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'10001110'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CNF2)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   CNF2
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00091 
+                      00092                 SPI_WriteL CNF3,B'00000101'     ; config register 3 of MCP2510
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000101'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CNF3)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   CNF3
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00093 
+                      00094                 SPI_WriteL CANINTE, B'00000000' ; int on RX0 full
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CANINTE)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   CANINTE
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00095                                                 ; no int on TX0/1/2 empty  
+                      00096                                                 ; no int on Message error/Wakeup/EFLG error
+                      00097 
+                      00098 
+                      00099 ;***********************************************************************
+                      00100 ;   Configure TX
+                      00101 ;***********************************************************************
+                      00102                 SPI_WriteL TXB0CTRL,B'00000011' ; TX0 has Highest Message Priority
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000011'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB0CTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB0CTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00103                 SPI_WriteL TXB1CTRL,B'00000010' ; TX1 has High Intermediate Message Priority
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000010'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB1CTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB1CTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00104                 SPI_WriteL TXB2CTRL,B'00000001' ; TX2 has Low Intermediate Message Priority
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000001'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB2CTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB2CTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00105 
+                      00106                 SPI_WriteL TXRTSCTRL,B'00000000'        ; all TXRTS pins are only digital inputs
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXRTSCTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXRTSCTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00107                 
+                      00108                 SPI_WriteD TXB0SIDH,IDTrackerTXH; Identifier High, Low is individual for each TX buffer 
+                                    
+Error[113]  : Symbol not previously defined (IDTrackerTXH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                      M                 movf    IDTrackerTXH,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB0SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB0SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00109                 SPI_WriteD TXB0SIDL,IDTrackerTXL; Identifier Low for TX0
+Error[113]  : Symbol not previously defined (IDTrackerTXL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movf    IDTrackerTXL,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB0SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB0SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00110 
+                      00111                 SPI_WriteL TXB1SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
+                                            
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   0x00
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB1SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB1SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00112                 SPI_WriteL TXB1SIDL,0x00        ; Identifier Low for TX1, never used    
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   0x00
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB1SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB1SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00113 
+                      00114                 SPI_WriteL TXB2SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
+                                            
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  6
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                      M                 movlw   0x00
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB2SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB2SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00115                 SPI_WriteL TXB2SIDL,0x00        ; Identifier Low for TX1, never used    
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   0x00
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB2SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB2SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00116                 
+                      00117                 SPI_WriteL TXB0DLC,0x08         ; Data Frame of TX0 has a lenght of 8 Bytes             
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   0x08
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB0DLC)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB0DLC
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00118                 SPI_WriteL TXB1DLC,0x06         ; Data Frame of TX1 has a lenght of 6 Bytes
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   0x06
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (TXB1DLC)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   TXB1DLC
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00119                 
+                      00120 ;TX Buffers are not cleared here!       
+                      00121 ;***********************************************************************
+                      00122 ;   Configure RX
+                      00123 ;***********************************************************************
+                      00124                 SPI_WriteL RXB0CTRL,B'00000000' ; B0 filter enabled, receive standart and extended frame
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  7
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                            s
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXB0CTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXB0CTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00125                 SPI_WriteL RXB1CTRL,B'00000000' ; B1 filter enabled
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXB1CTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXB1CTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00126 
+                      00127                 SPI_WriteL BFPCTRL,B'00000000'  ; disable RX1BF/RX0BF pin
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (BFPCTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   BFPCTRL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00128                 
+                      00129 ;***********************************************************************
+                      00130 ;   RX Filter and Masks
+                      00131 ;***********************************************************************
+                      00132 
+                      00133                 SPI_WriteL RXM0SIDH,B'11111111' ; acceptance filter mask 0 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'11111111'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXM0SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXM0SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  8
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                      M                 call    Write2510
+                      00134                 SPI_WriteL RXM0SIDL,B'11100000' ; acceptance filter mask 0 low
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'11100000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXM0SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXM0SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00135                                 
+                      00136                 SPI_WriteD RXF1SIDH,IDTrackerRXH; acceptance filter 1 high
+Error[113]  : Symbol not previously defined (IDTrackerRXH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movf    IDTrackerRXH,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF1SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF1SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00137                 SPI_WriteD RXF1SIDL,IDTrackerRXL; acceptance filter 1 low
+Error[113]  : Symbol not previously defined (IDTrackerRXL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movf    IDTrackerRXL,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF1SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF1SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00138                 
+                      00139                 SPI_WriteD RXF0SIDH,IDTrackerRXH; acceptance filter 0 high
+Error[113]  : Symbol not previously defined (IDTrackerRXH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movf    IDTrackerRXH,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF0SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF0SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE  9
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                      M                 call    Write2510
+                      00140                 SPI_WriteD RXF0SIDL,IDTrackerRXL; acceptance filter 0 low
+Error[113]  : Symbol not previously defined (IDTrackerRXL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movf    IDTrackerRXL,W
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF0SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF0SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00141                 
+                      00142                 SPI_WriteL RXM1SIDH,B'11111111' ; acceptance filter mask 1 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'11111111'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXM1SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXM1SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00143                 SPI_WriteL RXM1SIDL,B'11100000' ; acceptance filter mask 1 low
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'11100000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXM1SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXM1SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00144 
+                      00145                 SPI_WriteL RXF2SIDH,B'00000000' ; acceptance filter 2 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF2SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF2SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00146                 SPI_WriteL RXF2SIDL,B'00000000' ; acceptance filter 2 low
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 10
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF2SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF2SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00147 
+                      00148                 SPI_WriteL RXF3SIDH,B'00000000' ; acceptance filter 3 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF3SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF3SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00149                 SPI_WriteL RXF3SIDL,B'00000000' ; acceptance filter 3 low
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF3SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF3SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00150 
+                      00151                 SPI_WriteL RXF4SIDH,B'00000000' ; acceptance filter 4 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF4SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF4SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00152                 SPI_WriteL RXF4SIDL,B'00000000' ; acceptance filter 4 low
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 11
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF4SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF4SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00153 
+                      00154                 SPI_WriteL RXF5SIDH,B'00000000' ; acceptance filter 5 high
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF5SIDH)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF5SIDH
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00155                 SPI_WriteL RXF5SIDL,B'00000000' ; acceptance filter 5 low
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000000'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (RXF5SIDL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   RXF5SIDL
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00156 
+                      00157 ;***********************************************************************
+                      00158 ;   Errors and Interupts
+                      00159 ;***********************************************************************
+                      00160 
+                      00161                 SPI_WriteL      CANINTE,B'00000001'     ; enable RX0 Buffer Interupt
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   B'00000001'
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CANINTE)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 movlw   CANINTE
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                      M                 call    Write2510
+                      00162                                 
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 12
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                  00163                 call    NormalMode2510
+                      00164 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00165                 RETURN
+                      00166 
+                      00167 
+                      00168 ;**********************************************************************
+                      00169 ;               RESET Internal registers to default state
+                      00170 ;
+                      00171 ;               NOTE: - automatically put MCP2510 in configuration mode
+                      00172 ;                     data format under SPI bus
+                      00173 ;                     SI pin -> instruction
+                      00174 ;                     SO pin ->    ---
+                      00175 ;**********************************************************************
+                      00176 
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00177 Reset2510       call    InitSPIBuf
+                      00178 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00179                 movlw   RESET2510
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00180                 call    LoadSPIByte     ; reset MCP2510
+                      00181 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00182                 call    ExchangeSPI     ; start SPI transaction
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00183                 call    WaitSPIExchange ; wait SPI transaction complete
+                      00184 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00185                 movlw   0x25            ; wait 37us
+Error[113]  : Symbol not previously defined (wait)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00186                 call    wait
+                      00187 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00188                 RETURN
+                      00189 
+                      00190 
+                      00191 ;**********************************************************************
+                      00192 ;               READ data from register beginning at selected address
+                      00193 ;
+                      00194 ;               IN: w                   address of the register to be readed
+                      00195 ;                   RegAdr2510          temp to hold address
+                      00196 ;
+                      00197 ;               NOTE: data format under SPI bus
+                      00198 ;                     SI pin -> instruction / address / ---
+                      00199 ;                     SO pin ->    ---      /   ---   / data
+                      00200 ;**********************************************************************
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 13
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00201 Read2510        movwf   RegAdr2510      ; hold address
+                      00202 
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00203                 call    InitSPIBuf      ; init SPI buffer
+                      00204 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00205                 movlw   READ2510        ; MCP2510 instruction
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00206                 call    LoadSPIByte
+                      00207 
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00208                 movf    RegAdr2510,W    ; MCP2510 address
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00209                 call    LoadSPIByte
+                      00210 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00211                 movlw   1               ; Expect 1 byte answer
+Error[113]  : Symbol not previously defined (LoadSPIZeros)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00212                 call    LoadSPIZeros
+                      00213 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00214                 call    ExchangeSPI     ; send via SPI bus
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00215                 call    WaitSPIExchange ; wait transmission to be complete
+                      00216 
+Error[113]  : Symbol not previously defined (SPIBufBase)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00217                 movf    SPIBufBase+2,W  ; store answer in SPI buffer
+                      00218 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00219                 RETURN
+                      00220 
+                      00221 
+                      00222 ;**********************************************************************
+                      00223 ;               WRITE data to register beginning at selected address
+                      00224 ;
+                      00225 ;               IN: w                   address of the register to be readed
+                      00226 ;                   RegAdr2510          temp to hold address
+                      00227 ;                   RegData2510         data sent/receive register
+                      00228 ;
+                      00229 ;               NOTE: data format under SPI bus
+                      00230 ;                     SI pin -> instruction / address / data
+                      00231 ;                     SO pin ->    ---      /   ---   / ---
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 14
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00232 ;**********************************************************************
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00233 Write2510       movwf   RegAdr2510      ; hold address
+                      00234 
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00235                 call    InitSPIBuf      ; init SPI buffer
+                      00236 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00237                 movlw   WRITE2510       ; MCP2510 instruction
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00238                 call    LoadSPIByte
+                      00239 
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00240                 movf    RegAdr2510,W    ; MCP2510 address
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00241                 call    LoadSPIByte
+                      00242 
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00243                 movf    RegData2510,W   ; Expect 1 byte answer
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00244                 call    LoadSPIByte
+                      00245 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00246                 call    ExchangeSPI     ; send via SPI bus
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00247                 call    WaitSPIExchange ; wait transmission to be complete
+                      00248 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00249                 RETURN
+                      00250 
+                      00251 
+                      00252 ;**********************************************************************
+                      00253 ;               RTS Send the request to send instruction to the CAN-Bus
+                      00254 ;               Controller with value in w (ORed)
+                      00255 ;
+                      00256 ;               - Sets TXBnCTRL
+                      00257 ;               - TXREQ bit for one or more transmit buffers
+                      00258 ;
+                      00259 ;               IN: w                   address of the register to be readed
+                      00260 ;                   RegAdr2510          temp to hold address
+                      00261 ;                   RegData2510         data sent/receive register
+                      00262 ;
+                      00263 ;               NOTE: data format under SPI bus
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 15
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00264 ;                     SI pin -> instruction (10000nnn)
+                      00265 ;                     SO pin ->    ---
+                      00266 ;**********************************************************************
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00267 Rts2510         movwf   RegData2510     ; hold address
+                      00268 
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00269                 call    InitSPIBuf      ; init SPI buffer
+                      00270 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00271                 movlw   RTS2510         ; MCP2510 instruction
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00272                 iorwf   RegData2510,W   ; get data and OR it with RTS
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00273                 call    LoadSPIByte
+                      00274 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00275                 call    ExchangeSPI     ; send via SPI bus
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00276                 call    WaitSPIExchange ; wait transmission to be complete
+                      00277 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00278                 RETURN
+                      00279 
+                      00280 
+                      00281 ;**********************************************************************
+                      00282 ;               GET STATUS bits for transmit/receive functions 
+                      00283 ;
+                      00284 ;               NOTE: data format under SPI bus
+                      00285 ;                     SI pin -> instruction /  ---   /     ---
+                      00286 ;                     SO pin ->    ---      /  data  / repeat data
+                      00287 ;**********************************************************************
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00288 Status2510      call    InitSPIBuf      ; init SPI buffer
+                      00289 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00290                 movlw   STATUS2510      ; MCP2510 instruction
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00291                 call    LoadSPIByte
+                      00292 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00293                 movlw   1               ; Expect 1 byte answer
+Error[113]  : Symbol not previously defined (LoadSPIZeros)
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 16
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00294                 call    LoadSPIZeros
+                      00295 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00296                 call    ExchangeSPI     ; send via SPI bus
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00297                 call    WaitSPIExchange ; wait transmission to be complete
+                      00298 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00299                 RETURN
+                      00300 
+                      00301 
+                      00302 ;**********************************************************************
+                      00303 ;               MODIFY BIT IN REGITERS OF MCP2510 CAN-Controller 
+                      00304 ;
+                      00305 ;               IN: reg W               address of the register to be modified
+                      00306 ;                   RegAdr2510          temp to hold address
+                      00307 ;                   RegMask2510         mask register
+                      00308 ;                   RegData2510         data sent/receive register
+                      00309 ;
+                      00310 ;               NOTE: data format under SPI bus
+                      00311 ;                     SI pin -> instruction / address / mask / data
+                      00312 ;                     SO pin -> ---
+                      00313 ;**********************************************************************
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00314 BitMod2510      movwf   RegAdr2510      ; hold address
+                      00315 
+Error[113]  : Symbol not previously defined (InitSPIBuf)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00316                 call    InitSPIBuf      ; init SPI buffer
+                      00317 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00318                 movlw   BITMODIFY2510   ; MCP2510 instruction
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00319                 call    LoadSPIByte
+                      00320 
+Error[113]  : Symbol not previously defined (RegAdr2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00321                 movf    RegAdr2510,W    ; MCP2510 address
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00322                 call    LoadSPIByte
+                      00323 
+Error[113]  : Symbol not previously defined (RegMask2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00324                 movf    RegMask2510,W   ; MCP2510 mask
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 17
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                  00325                 call    LoadSPIByte
+                      00326 
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00327                 movf    RegData2510,W   ; MCP2510 data
+Error[113]  : Symbol not previously defined (LoadSPIByte)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00328                 call    LoadSPIByte
+                      00329 
+Error[113]  : Symbol not previously defined (ExchangeSPI)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00330                 call    ExchangeSPI     ; send via SPI bus
+Error[113]  : Symbol not previously defined (WaitSPIExchange)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00331                 call    WaitSPIExchange ; wait transmission to be complete
+                      00332 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00333                 RETURN
+                      00334 
+                      00335 
+                      00336 ;**********************************************************************
+                      00337 ;               SET NORMAL MODE OF MCP2510 CAN-Controller 
+                      00338 ;
+                      00339 ;               NOTE: - Set normal operation mode
+                      00340 ;                     - CLKOUT pin disable
+                      00341 ;**********************************************************************
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00342 NormalMode2510  movlw   B'11100000'     ; mask bits
+Error[113]  : Symbol not previously defined (RegMask2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00343                 movwf   RegMask2510
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00344                 movlw   B'00000000'     ; Set Normal Mode
+Error[113]  : Symbol not previously defined (RegData2510)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00345                 movwf   RegData2510
+Error[113]  : Symbol not previously defined (CANCTRL)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00346                 movlw   CANCTRL         ; CAN control register of MCP2510
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00347                 call    BitMod2510
+                      00348 
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00349                 movlw   0x00    
+Error[113]  : Symbol not previously defined (NormalModeCounter)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00350                 movwf   NormalModeCounter
+                      00351                 
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[113]  : Symbol not previously defined (NormalModeCounter)
+Error[152]  : Executable code and data must be defined in an appropriate section
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 18
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000                  00352 WaitNormal      incf    NormalModeCounter,f
+Error[113]  : Symbol not previously defined (CANSTAT)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00353                 movlw   CANSTAT
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00354                 call    Read2510
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00355                 andlw   0xE0
+Error[113]  : Symbol not previously defined (_Z)
+Error[128]  : Missing argument(s)
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00356                 btfsc   _Z
+Error[151]  : Operand contains unresolvable labels or is too complex
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00357                   goto  Ret
+Warning[207]: Found label after column 1. (jmpFneL)
+Error[122]  : Illegal opcode (NormalModeCounter)
+0000                  00358                 jmpFneL NormalModeCounter,0xFF,WaitNormal               
+                      00359 
+Error[150]  : Labels must be defined in a code or data section when making an object file
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00360 Ret             nop
+Error[152]  : Executable code and data must be defined in an appropriate section
+0000                  00361                 RETURN
+                      00362 
+                      00363 
+Error[129]  : Expected (END)
+MPASM 03.90 Released                                 2510.ASM   2-8-2005  11:53:54         PAGE 19
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+BITMODIFY2510                     0x05
+BitMod2510                        00000000
+Init2510                          00000000
+NormalMode2510                    00000000
+READ2510                          0x03
+RESET2510                         0xC0
+RTS2510                           0x80
+Read2510                          00000000
+Reset2510                         00000000
+Ret                               00000000
+Rts2510                           00000000
+SPI_WriteD                        
+SPI_WriteL                        
+STATUS2510                        0xA0
+Status2510                        00000000
+WRITE2510                         0x02
+WaitNormal                        00000000
+Write2510                         00000000
+__16F877                          00000001
+
+Errors   :   417
+Warnings :     1 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+

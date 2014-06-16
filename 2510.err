@@ -1,0 +1,418 @@
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 79 : Labels must be defined in a code or data section when making an object file
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 79 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 79 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 81 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 82 : Symbol not previously defined (RegMask2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 82 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 83 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 84 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 84 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 85 : Symbol not previously defined (CANCTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 85 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 86 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 86 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (CNF1)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (CNF2)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (CNF3)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (CANINTE)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB0CTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB1CTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB2CTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXRTSCTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerTXH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (TXB0SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerTXL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (TXB0SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB1SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB1SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB2SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB2SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB0DLC)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (TXB1DLC)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXB0CTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXB1CTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (BFPCTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXM0SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXM0SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerRXH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (RXF1SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerRXL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (RXF1SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerRXH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (RXF0SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Symbol not previously defined (IDTrackerRXL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 57 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Symbol not previously defined (RXF0SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 60 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXM1SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXM1SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF2SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF2SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF3SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF3SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF4SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF4SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF5SIDH)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (RXF5SIDL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 44 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 45 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Symbol not previously defined (CANINTE)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 163 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 163 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 165 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 177 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 177 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 177 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 179 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 180 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 180 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 182 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 182 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 183 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 183 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 185 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 186 : Symbol not previously defined (wait)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 186 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 188 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 201 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 201 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 201 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 203 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 203 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 205 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 206 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 206 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 208 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 208 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 209 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 209 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 211 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 212 : Symbol not previously defined (LoadSPIZeros)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 212 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 214 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 214 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 215 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 215 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 217 : Symbol not previously defined (SPIBufBase)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 217 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 219 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 233 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 233 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 233 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 235 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 235 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 237 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 238 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 238 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 240 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 240 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 241 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 241 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 243 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 243 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 244 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 244 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 246 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 246 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 247 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 247 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 249 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 267 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 267 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 267 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 269 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 269 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 271 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 272 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 272 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 273 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 273 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 275 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 275 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 276 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 276 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 278 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 288 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 288 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 288 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 290 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 291 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 291 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 293 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 294 : Symbol not previously defined (LoadSPIZeros)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 294 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 296 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 296 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 297 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 297 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 299 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 314 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 314 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 314 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 316 : Symbol not previously defined (InitSPIBuf)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 316 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 318 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 319 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 319 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 321 : Symbol not previously defined (RegAdr2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 321 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 322 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 322 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 324 : Symbol not previously defined (RegMask2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 324 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 325 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 325 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 327 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 327 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 328 : Symbol not previously defined (LoadSPIByte)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 328 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 330 : Symbol not previously defined (ExchangeSPI)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 330 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 331 : Symbol not previously defined (WaitSPIExchange)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 331 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 333 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 342 : Labels must be defined in a code or data section when making an object file
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 342 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 343 : Symbol not previously defined (RegMask2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 343 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 344 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 345 : Symbol not previously defined (RegData2510)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 345 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 346 : Symbol not previously defined (CANCTRL)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 346 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 347 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 347 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 349 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 350 : Symbol not previously defined (NormalModeCounter)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 350 : Executable code and data must be defined in an appropriate section
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 352 : Labels must be defined in a code or data section when making an object file
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 352 : Symbol not previously defined (NormalModeCounter)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 352 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 353 : Symbol not previously defined (CANSTAT)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 353 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 354 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 354 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 355 : Executable code and data must be defined in an appropriate section
+Error[113]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 356 : Symbol not previously defined (_Z)
+Error[128]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 356 : Missing argument(s)
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 356 : Executable code and data must be defined in an appropriate section
+Error[151]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 357 : Operand contains unresolvable labels or is too complex
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 357 : Executable code and data must be defined in an appropriate section
+Warning[207] K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 358 : Found label after column 1. (jmpFneL)
+Error[122]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 358 : Illegal opcode (NormalModeCounter)
+Error[150]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 360 : Labels must be defined in a code or data section when making an object file
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 360 : Executable code and data must be defined in an appropriate section
+Error[152]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 361 : Executable code and data must be defined in an appropriate section
+Error[129]   K:\DRIVETEK\107_MPPT\SOFTWARE\V6.0\2510.ASM 364 : Expected (END)
