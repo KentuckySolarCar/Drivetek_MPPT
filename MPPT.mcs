@@ -13,7 +13,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=
 TraceCmdString=
-DebugOptions=/d__DEBUG=1
+DebugOptions=
 [File001]
 Location=C:\Users\jebr224\Desktop\john\repos\Drivetek_MPPT\mpptngv6.o
 Folder=Intermediary
@@ -26,7 +26,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=
 TraceCmdString=
-DebugOptions=/d__DEBUG=1
+DebugOptions=
 [File002]
 Location=K:\drivetek\107_MPPT\Software\V6.0\mpptngv6.cod
 Folder=Output
@@ -65,7 +65,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=
 TraceCmdString=
-DebugOptions=/d__DEBUG=1
+DebugOptions=
 [File005]
 Location=C:\Users\jebr224\Desktop\john\repos\Drivetek_MPPT\MPPT.cof
 Folder=Output
@@ -78,7 +78,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=/o"$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [File006]
 Location=C:\Users\jebr224\Desktop\john\repos\Drivetek_MPPT\MPPT.hex
 Folder=Output
@@ -91,7 +91,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=/o"$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [File007]
 Location=C:\Users\jebr224\Desktop\john\repos\Drivetek_MPPT\MPPT.cod
 Folder=Output
@@ -104,7 +104,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=/o"$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [File008]
 Location=C:\Users\jebr224\Desktop\john\repos\Drivetek_MPPT\MPPT.lst
 Folder=Output
@@ -117,7 +117,7 @@ SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
 SuiteArgsString=generate-relocatable-code
 ToolArgsString=/o"$(TARGETBASE).cof"
 TraceCmdString=
-DebugOptions=/z__MPLAB_DEBUG=1
+DebugOptions=
 [TOOL_LOC_STAMPS]
 tool_loc{49D3CA3F-D9A3-4518-9943-226A347E8CC7}=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
 tool_loc{96C98149-AA1B-4CF9-B967-FAE79CAB663C}=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
