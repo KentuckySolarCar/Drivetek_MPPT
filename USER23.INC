@@ -30,11 +30,15 @@
 ;John Broadbent University Of Kentucky Solar Car Team (UKSC)
 ;We downloaded this code from UC Berkly (CalSol), with the goal of useing this to change the operating point for our trackers.
 ;The p16f877 has serveral 10 bit adc's, and the MPPT send can messages with a 10 bit voltage.
+
+;===================================
+;gallium versioin 11/3/2014
+;===================================
 ;The target operating points are below
 ;Minimum Input Voltage [V]  37.79
-;Maximum Input Voltage [V]  69.37
+;Maximum Input Voltage [V]  107
 ;Nominal Battery Voltage [V]  132
-;Minimum Output Voltage [V]  90
+;Minimum Output Voltage [V]  117.39
 ;Maximum Output Voltage [V]  148 
 ;Maximum Input MPP Current [A] 5.79
 ;Maximum Input Short Circuit Current [A] 6.22
@@ -84,9 +88,9 @@
 
 ;UKSC new values (JB)
 ;(target Voltage) / (mV per Count) = number of counts needed
-;(90 volts) / (208.79 mV perCount) = 433  = 0x01b1
-#define MINUBATH   0x01
-#define MINUBATL   0xb1
+;(117.39 volts) / (208.79 mV perCount) = 560  = 0x0230
+#define MINUBATH   0x02
+#define MINUBATL   0x30
 ;**********************************************************************
 ;   border ot discontinuous mode 
 ;   ON-Values have to be greater than OFF-Values
@@ -115,8 +119,8 @@
 ;UKSC new values (JB)
 
 ;(target Voltage) / (mV per Count) = number of counts needed
-;( 69.37 volts) / (150.49 mV perCount) = 461 = 0x01CD
+;( 107 volts) / (150.49 mV perCount) = 690 = 0x02b2
 
-#define UmppH 0x01      
-#define UmppL 0xCD	                                                                                                                                                                                                                                                                                                            
+#define UmppH 0x02      
+#define UmppL 0xb2                                                                                                                                                                                                     
 
