@@ -32,14 +32,14 @@
 ;The p16f877 has serveral 10 bit adc's, and the MPPT send can messages with a 10 bit voltage.
 
 ;===================================
-;gallium versioin 11/3/2014
+;gallium versioin 07/30/2015
 ;===================================
 ;The target operating points are below
-;Minimum Input Voltage [V]  37.79
+;Minimum Input Voltage [V]  33.5
 ;Maximum Input Voltage [V]  107
 ;Nominal Battery Voltage [V]  132
 ;Minimum Output Voltage [V]  117.39
-;Maximum Output Voltage [V]  148 
+;Maximum Output Voltage [V]  134 
 ;Maximum Input MPP Current [A] 5.79
 ;Maximum Input Short Circuit Current [A] 6.22
 ; 
@@ -60,11 +60,11 @@
 ;#define MAXUOL		0x55		; 117.6 V: Max Batt. volt LByte in
 					; 196.97 mV Unit
 
-;UKSC new values (JB)
+;UKSC new values (JM)
 ; (target voltage) / ( mV per Count) = number of counts needed 
-;( 148 volts / 208.79mV per Count) = 709 Counts = 0x02c4
+;( 134 volts / 208.79mV per Count) = 641.79 ~= 642 Counts = 0x0282
 #define MAXUOH      0x02
-#define MAXUOL      0xc4
+#define MAXUOL      0x82
 
 
 ;**********************************************************************
@@ -74,12 +74,12 @@
 ;#define MINUINH	0x00	; Min  input voltage HByte 26V in 150.49 mV Units
 ;#define MINUINL	0xAD	; Min  input voltage LByte 26V; in 150.49 mV Units
 
-;UKSC new values (JB)
+;UKSC new values (JM)
 ;(target Voltage) / (mV per Count) = number of counts needed
-;(37.79 votls) / ( 150.49 mV / per count) = 251 = 0x00FB
+;(33.5 votls) / ( 150.49 mV / per count) = 222.606 ~= 222 counts = 0x00DE
 
 #define MINUINH 0x00
-#define MINUINL	0xFB
+#define MINUINL	0xDE
 ;**********************************************************************
 ;Min Output Voltage, used for Precharge
 ;**********************************************************************

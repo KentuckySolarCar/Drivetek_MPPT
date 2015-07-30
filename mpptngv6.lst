@@ -1,4 +1,4 @@
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  1
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00001         LIST
                       00002 ; P16F877.INC  Standard Header File, Version 1.00    Microchip Technology, Inc.
                       00373         LIST
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  2
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00050 #define RXM1EID8        0x26
                       00051 #define RXM1EID0        0x27
                       00052 #define CNF3            0x28
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  3
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00103 #define TXB2D2          0x58
                       00104 #define TXB2D3          0x59
                       00105 #define TXB2D4          0x5A
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  4
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00156 ;; Bit definitions TXRTSCTRL
                       00157 #define trB2RTS BFPCTRL,5
                       00158 #define trB1RTS BFPCTRL,4
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  5
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00209 #define trWAKIE CANINTE,6
                       00210 #define trERRIE CANINTE,5
                       00211 #define trTX2IE CANINTE,4
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  6
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00262 #define trRXM10 RXB0CTRL,6
                       00263 #define trRXM00 RXB0CTRL,5
                       00264 #define trRXRTR0        RXB0CTRL,3
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  7
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00033 
                       00034 ; Special register bit definition pairs
                       00035 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  8
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00086         bcf     PCLATH,4
                       00087         bsf     PCLATH,3
                       00088         endm
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE  9
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00139 BANK1   macro
                       00140         bsf     STATUS,5    ; Select page 1
                       00141         endm
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 10
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00192         movf    Reg,W
                       00193           sublw   bVal
                       00194         btfsc   _Z
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 11
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -647,7 +647,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00245         andlw   0xFF
                       00246         jmpNZ   Label
                       00247         endm
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 12
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -706,7 +706,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00298 
                       00299 jmpWgeL macro   bVal,Label
                       00300         sublw   bVal
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 13
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -765,7 +765,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00351 
                       00352 jmpWneF macro   Reg,Label
                       00353         subwf   Reg,W
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 14
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -824,7 +824,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00404         btfsc   Reg,Bit
                       00405         endm
                       00406 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 15
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -883,7 +883,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00002 ;                                                                     *
                       00003 ;                                                                     *
                       00004 ;   Macros for MPPTnG Version 2.0                                     *
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 16
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -942,7 +942,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00055 ; Converter
                       00056 #define INV_MOS_ENA     PORTB,1         ; Enable High-Side FET switching
                       00057 #define ENA_FET         PORTC,0         ; Enable FET switching
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 17
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1001,7 +1001,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00108 ;               SPI DEFINITIONS (Constants)
                       00109 ;**********************************************************************
                       00110 #define INIT_SPI        B'00010010'     ; SPI Master, Clock idle high, Fosc/64, no collision
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 18
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1060,7 +1060,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000032            00161         UO3H                            ; ADChannel 1 (Umes_out) value high byte
   00000033            00162         UO3L                            ; ADChannel 1 (Umes_out) value low byte
   00000034            00163         UOFH                            ; Averaged (UOUT) high byte
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 19
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1119,7 +1119,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000006D            00214         IntSavePCLATH                   ; save PCLATCH
                       00215 
   0000006E            00216         GenFlags                        ; General Control Flags
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 20
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1171,58 +1171,119 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00025 ;                                                                                         *
                       00026 ;**********************************************************************
                       00027 
-                      00028 ;**********************************************************************
-                      00029 ;   maximum battery voltage
-                      00030 ;**********************************************************************
-                      00031 #define INITDUTY        0x74            ; Duty resulting of Ubat and Uoc
-                      00032 #define MAXUOH          0x02            ; 117.6 V: Max Batt. volt HByte 
-                      00033                                         ; in 196.97 mV Units
-                      00034 #define MAXUOL          0x55            ; 117.6 V: Max Batt. volt LByte in
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 21
+                      00028 
+                      00029 ;--------------------------
+                      00030 ;John Broadbent University Of Kentucky Solar Car Team (UKSC)
+                      00031 ;We downloaded this code from UC Berkly (CalSol), with the goal of useing this to change the operating p
+                            oint for our trackers.
+                      00032 ;The p16f877 has serveral 10 bit adc's, and the MPPT send can messages with a 10 bit voltage.
+                      00033 
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00035                                         ; 196.97 mV Unit
-                      00036 
-                      00037 ;**********************************************************************
-                      00038 ;   P&O Constants
-                      00039 ;**********************************************************************
-                      00040 #define MINUINH 0x00    ; Min  input voltage HByte 26V in 150.49 mV Units
-                      00041 #define MINUINL 0xAD    ; Min  input voltage LByte 26V in 150.49 mV Units
-                      00042 
-                      00043 ;**********************************************************************
-                      00044 ;Min Output Voltage, used for Precharge
-                      00045 ;**********************************************************************
-                      00046 #define MINUBATH        0x01    ; Min output voltage HByte 84 V in 196.97 mV  Units
-                      00047 #define MINUBATL        0xAA    ; Min output voltage LByte 84 V in 196.97 mV  Units
-                      00048 
-                      00049 ;**********************************************************************
-                      00050 ;   border ot discontinuous mode 
-                      00051 ;   ON-Values have to be greater than OFF-Values
-                      00052 ;   notice the hysteresis NOT USED IN HARDWARE V3.0!!!
-                      00053 ;**********************************************************************
-                      00054 ;#define IHFETONH       0x01    ; H-FET Turn on HByte 32% of max current
-                      00055 ;#define IHFETONL       0x47    ; H-FET Turn on LByte 32% of max current
-                      00056 ;#define IHFETOFFH      0x01    ; H-FET Turn on HByte 25% of max current
-                      00057 ;#define IHFETOFFL      0x00    ; H-FET Turn on LByte 25% of max current
-                      00058 
-                      00059 
-                      00060 ;**********************************************************************
-                      00061 ;   Minimum Input Power of 
-                      00062 ;**********************************************************************
-                      00063 
-                      00064 #define MINPINM 0x16    ; M-Byte Min input power 5W (5.86 mA/Bit x 150.49 mV/Bit)
-                      00065 #define MINPINL 0x26    ; L-Byte Min input power
-                      00066 
-                      00067 ;**********************************************************************
-                      00068 ;   Maximum Power Point Input Voltage (influences tracking step width)
-                      00069 ;**********************************************************************
-                      00070                                                                                                         
+                      00034 ;===================================
+                      00035 ;gallium versioin 07/30/2015
+                      00036 ;===================================
+                      00037 ;The target operating points are below
+                      00038 ;Minimum Input Voltage [V]  33.5
+                      00039 ;Maximum Input Voltage [V]  107
+                      00040 ;Nominal Battery Voltage [V]  132
+                      00041 ;Minimum Output Voltage [V]  117.39
+                      00042 ;Maximum Output Voltage [V]  134 
+                      00043 ;Maximum Input MPP Current [A] 5.79
+                      00044 ;Maximum Input Short Circuit Current [A] 6.22
+                      00045 ; 
+                      00046 ; and the volts to count (for the version 4 from the PDF)are 
+                      00047 ;Input voltage multiplication factor: 150.49 [mV/LSB]
+                      00048 ;Output voltage multiplication factor: 208.79 [mV/LSB]
+                      00049 ;Input MPP current multiplication factor: 8.72 [mA/LSB]
+                      00050 
+                      00051 ;-----------------
+                      00052 ;**********************************************************************
+                      00053 ;   maximum battery voltage
+                      00054 ;**********************************************************************
+                      00055 #define INITDUTY        0x74            ; Duty resulting of Ubat and Uoc
+                      00056 
+                      00057 ;CalSol's values are below. Kinda neat, I guess.
+                      00058 ;#define MAXUOH         0x02            ; 117.6 V: Max Batt. volt HByte 
+                      00059                                         ; in 196.97 mV Units
+                      00060 ;#define MAXUOL         0x55            ; 117.6 V: Max Batt. volt LByte in
+                      00061                                         ; 196.97 mV Unit
+                      00062 
+                      00063 ;UKSC new values (JM)
+                      00064 ; (target voltage) / ( mV per Count) = number of counts needed 
+                      00065 ;( 134 volts / 208.79mV per Count) = 641.79 ~= 642 Counts = 0x0282
+                      00066 #define MAXUOH      0x02
+                      00067 #define MAXUOL      0x82
+                      00068 
+                      00069 
+                      00070 ;**********************************************************************
+                      00071 ;   P&O Constants
+                      00072 ;**********************************************************************
+                      00073 ;CalSol's values are below. Kinda neat, I guess.
+                      00074 ;#define MINUINH        0x00    ; Min  input voltage HByte 26V in 150.49 mV Units
+                      00075 ;#define MINUINL        0xAD    ; Min  input voltage LByte 26V; in 150.49 mV Units
+                      00076 
+                      00077 ;UKSC new values (JM)
+                      00078 ;(target Voltage) / (mV per Count) = number of counts needed
+                      00079 ;(33.5 votls) / ( 150.49 mV / per count) = 222.606 ~= 222 counts = 0x00DE
+                      00080 
+                      00081 #define MINUINH 0x00
+                      00082 #define MINUINL 0xDE
+                      00083 ;**********************************************************************
+                      00084 ;Min Output Voltage, used for Precharge
+                      00085 ;**********************************************************************
+                      00086 ;#define MINUBATH       0x01    ; Min output voltage HByte 84 V in 196.97 mV  Units
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 22
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00087 ;#define MINUBATL       0xAA    ; Min output voltage LByte 84 V in 196.97 mV  Units
+                      00088 
+                      00089 ;UKSC new values (JB)
+                      00090 ;(target Voltage) / (mV per Count) = number of counts needed
+                      00091 ;(117.39 volts) / (208.79 mV perCount) = 560  = 0x0230
+                      00092 #define MINUBATH   0x02
+                      00093 #define MINUBATL   0x30
+                      00094 ;**********************************************************************
+                      00095 ;   border ot discontinuous mode 
+                      00096 ;   ON-Values have to be greater than OFF-Values
+                      00097 ;   notice the hysteresis NOT USED IN HARDWARE V3.0!!!
+                      00098 ;**********************************************************************
+                      00099 ;#define IHFETONH       0x01    ; H-FET Turn on HByte 32% of max current
+                      00100 ;#define IHFETONL       0x47    ; H-FET Turn on LByte 32% of max current
+                      00101 ;#define IHFETOFFH      0x01    ; H-FET Turn on HByte 25% of max current
+                      00102 ;#define IHFETOFFL      0x00    ; H-FET Turn on LByte 25% of max current
+                      00103 
+                      00104 
+                      00105 ;**********************************************************************
+                      00106 ;   Minimum Input Power of 
+                      00107 ;**********************************************************************
+                      00108 
+                      00109 #define MINPINM 0x16    ; M-Byte Min input power 5W (5.86 mA/Bit x 150.49 mV/Bit)
+                      00110 #define MINPINL 0x26    ; L-Byte Min input power
+                      00111 
+                      00112 ;**********************************************************************
+                      00113 ;   Maximum Power Point Input Voltage (influences tracking step width)
+                      00114 ;**********************************************************************
+                      00115 
+                      00116 ;#define UmppH 0x02      ; Mpp input voltage HByte 86 V in 150.49 mV Units
+                      00117 ;#define UmppL 0x3B         ; Mpp input voltage LByte 86 V in 150.49 mV Units     
+                      00118 
+                      00119 ;UKSC new values (JB)
+                      00120 
+                      00121 ;(target Voltage) / (mV per Count) = number of counts needed
+                      00122 ;( 107 volts) / (150.49 mV perCount) = 690 = 0x02b2
+                      00123 
+                      00124 #define UmppH 0x02      
+                      00125 #define UmppL 0xb2                                                                                      
                                                                                                                             
-                      00071 #define UmppH 0x02      ; Mpp input voltage HByte 86 V in 150.49 mV Units
-                      00072 #define UmppL 0x3B          ; Mpp input voltage LByte 86 V in 150.49 mV Units
+                      00126 
                       00055 
 2007   3F36           00056         __CONFIG _CP_OFF & _WRT_ENABLE_ON & _CPD_OFF & _LVP_OFF & _BODEN_OFF & _PWRTE_ON & _WDT_ON & _HS
                             _OSC
@@ -1235,14 +1296,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00063 ;    - _WRT_ENABLE_ON   : Flash Programm Memory Write Enable          -
                       00064 ;    - _CPD_OFF         : Data EE Memory Code Protection                 -
                       00065 ;    - _LVP_OFF         : Low Voltage ICSP Enable bit                    -
-                      00066 ;    - _BODEN_OFF       : Brown-out Reset Enable bit                        -
-                      00067 ;    - _PWRTE_ON        : Power-up Timer Enable bit                         -
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 22
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00066 ;    - _BODEN_OFF       : Brown-out Reset Enable bit                        -
+                      00067 ;    - _PWRTE_ON        : Power-up Timer Enable bit                         -
                       00068 ;    - _WDT_OFF         : Watchdog Timer Enable bit                      -
                       00069 ;    - _HS_OSC          : HS oscillator                                     -
                       00070 ;                                                                     -
@@ -1294,14 +1355,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00028 ;               INTERRUPT Vector
                       00029 ;
                       00030 ;               Global int bit, GIE, has been reset.
-                      00031 ;               W saved in IntSaveW0 or IntSaveW1 depending on the
-                      00032 ;               bank selected at the time the interrupt occured.
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 23
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00031 ;               W saved in IntSaveW0 or IntSaveW1 depending on the
+                      00032 ;               bank selected at the time the interrupt occured.
                       00033 ;               Preserve Status bits (since movf sets Z) is with a 
                       00034 ;               swapf command
                       00035 ;**********************************************************************
@@ -1353,14 +1414,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001B   086C           00078                 movf    IntSaveFSR,W    ; restore FSR
 001C   0084           00079                 movwf   FSR
 001D   0E6B           00080                 swapf   IntSaveSt,W     ; restore STATUS
-001E   0083           00081                 movwf   STATUS
-001F   0EFF           00082                 swapf   IntSaveW,F      ; swap original W in place
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 24
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+001E   0083           00081                 movwf   STATUS
+001F   0EFF           00082                 swapf   IntSaveW,F      ; swap original W in place
 0020   0E7F           00083                 swapf   IntSaveW,W
 0021   0009           00084                 RETFIE
                       00085 
@@ -1412,14 +1473,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00044                                                 ; in the converter module
                       00045                 btfsc   PORTC,1
                       00046                   goto $-1
-                      00047 
-                      00048                 ENDM
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 25
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00047 
+                      00048                 ENDM
                       00049 
                       00050 ;**********************************************************************
                       00051 ;               WAIT Loop
@@ -1471,14 +1532,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0043   300F           00097 wait1s          movlw   0x0F
 0044   00FC           00098                 movwf   COUNTERC
 0045   305A           00099                 movlw   0x5A
-0046   00FB           00100                 movwf   COUNTERB
-0047   00FA           00101                 movwf   COUNTERA
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 26
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0046   00FB           00100                 movwf   COUNTERB
+0047   00FA           00101                 movwf   COUNTERA
                       00102         
 0048   0000           00103 w2              nop
 0049   1B6E           00104                 btfsc   CANTxRq         ; Test if CAn interrupt has occured during the waiting time
@@ -1530,14 +1591,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 006C   179F           00148                 bsf     ADCON0,7        ; Tad = 32 * Tosc = 1.6us
                       00149 
                       00150                 BANK1
-006D   1683               M         bsf     STATUS,5    ; Select page 1
-006E   3081           00151                 movlw   INIT_IO_AD      ; init analog pins
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 27
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 28
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+006D   1683               M         bsf     STATUS,5    ; Select page 1
+006E   3081           00151                 movlw   INIT_IO_AD      ; init analog pins
 006F   009F           00152                 movwf   ADCON1
                       00153                 BANK0
 0070   1283               M         bcf     STATUS,5    ; Select page 0
@@ -1589,14 +1650,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 008A   0823           00192                 movf    UI1L,W
 008B   00A5           00193                 movwf   UI2L
 008C   0821           00194                 movf    UI0L,W
-008D   00A3           00195                 movwf   UI1L            ; shift former L-values
-                      00196 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 28
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 29
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+008D   00A3           00195                 movwf   UI1L            ; shift former L-values
+                      00196 
                       00197                 BANK1
 008E   1683               M         bsf     STATUS,5    ; Select page 1
 008F   081E           00198                 movf    ADRESL,W
@@ -1648,14 +1709,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00236 
 00AA   0831           00237                 movf    UO2L,W
 00AB   00B3           00238                 movwf   UO3L
-00AC   082F           00239                 movf    UO1L,W
-00AD   00B1           00240                 movwf   UO2L
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 29
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 30
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+00AC   082F           00239                 movf    UO1L,W
+00AD   00B1           00240                 movwf   UO2L
 00AE   082D           00241                 movf    UO0L,W
 00AF   00AF           00242                 movwf   UO1L            ; shift former L-values
                       00243 
@@ -1707,14 +1768,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00280 
 00CA   081E           00281                 movf    ADRESH,W
 00CB   00B6           00282                 movwf   II0H            ; store new high value
-                      00283 
-00CC   083B           00284                 movf    II2L,W
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 30
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 31
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00283 
+00CC   083B           00284                 movf    II2L,W
 00CD   00BD           00285                 movwf   II3L
 00CE   0839           00286                 movf    II1L,W
 00CF   00BB           00287                 movwf   II2L
@@ -1766,14 +1827,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00E7   00C2           00324                 movwf   TAMBH           ; store high value
                       00325                 BANK1
 00E8   1683               M         bsf     STATUS,5    ; Select page 1
-00E9   081E           00326                 movf    ADRESL,W
-                      00327                 BANK0
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 31
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 32
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+00E9   081E           00326                 movf    ADRESL,W
+                      00327                 BANK0
 00EA   1283               M         bcf     STATUS,5    ; Select page 0
 00EB   00C3           00328                 movwf   TAMBL           ; store low value
 00EC   101F           00329                 bcf     ADCON0,0        ; AD shutoff
@@ -1825,14 +1886,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00375                 waitforedge
                           M                 
 00F2   1C87               M                 btfss   PORTC,1         ; Trigger on negative edge to eliminate
-00F3   2???               M                   goto $-1                  ; the influece of the current commutation 
-                          M                                                 ; in the converter module
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 32
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 33
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+00F3   2???               M                   goto $-1                  ; the influece of the current commutation 
+                          M                                                 ; in the converter module
 00F4   1887               M                 btfsc   PORTC,1
 00F5   2???               M                   goto $-1
                           M 
@@ -1884,14 +1945,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00419                 
 010A   0829           00420                 movf    UIF0L,W
 010B   00F1           00421                 movwf   Temp0
-010C   0828           00422                 movf    UIF0H,W
-010D   00F2           00423                 movwf   Temp1
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 33
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 34
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+010C   0828           00422                 movf    UIF0H,W
+010D   00F2           00423                 movwf   Temp1
 010E   083F           00424                 movf    IIF0L,W
 010F   00F3           00425                 movwf   Temp2
 0110   083E           00426                 movf    IIF0H,W
@@ -1943,14 +2004,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00472 
                       00473 ;**********************************************************************
                       00474 ;               Get a filtered value of (UIN)
-                      00475 ;
-                      00476 ;               - Result register (000000xx xxxxxxxx)
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 34
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 35
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00475 ;
+                      00476 ;               - Result register (000000xx xxxxxxxx)
                       00477 ;               OUT: UIF0H,UIF0L
                       00478 ;**********************************************************************
 012E   2???           00479 GetFilteredUin  call    GetUin          ; Measure current value of Uin
@@ -2002,14 +2063,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 014E   3C02               M         sublw   0x02
 014F   1C03               M         btfss   _C
 0150   2???               M         goto    SmallDelta
-                      00523                 jmpFltL UIF0H, UmppH, BigDelta
-0151   0828               M           movfw     UIF0H
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 35
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 36
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00523                 jmpFltL UIF0H, UmppH, BigDelta
+0151   0828               M           movfw     UIF0H
                           M           jmpWltL   0x02,BigDelta
 0152   3C02               M         sublw   0x02
                           M         skipC
@@ -2020,8 +2081,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0156   2???               M         goto    BigDelta
                       00524                 jmpFgtL UIF0L, UmppL, SmallDelta
 0157   0829               M           movfw     UIF0L
-                          M           jmpWgtL   0x3B,SmallDelta
-0158   3C3B               M         sublw   0x3B
+                          M           jmpWgtL   0xb2,SmallDelta
+0158   3CB2               M         sublw   0xb2
 0159   1C03               M         btfss   _C
 015A   2???               M         goto    SmallDelta
                       00525 
@@ -2061,14 +2122,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00555 
 016F   072F           00556                 addwf   UO1L,W          ; Add it to former value
 0170   1803           00557                 btfsc   _C              ; If a carry occured...
-0171   0AB4           00558                    incf UOFH,F          ; ...then consider it 
-0172   0731           00559                 addwf   UO2L,W
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 36
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 37
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0171   0AB4           00558                    incf UOFH,F          ; ...then consider it 
+0172   0731           00559                 addwf   UO2L,W
 0173   1803           00560                 btfsc   _C              ; If a carry occured...
 0174   0AB4           00561                    incf UOFH,F
 0175   0733           00562                 addwf   UO3L,W  
@@ -2120,14 +2181,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0194   0ABE           00608                    incf IIF0H,F
 0195   073D           00609                 addwf   II3L,W  
 0196   1803           00610                 btfsc   _C              ; If a carry occured...
-0197   0ABE           00611                    incf IIF0H,F
-0198   00BF           00612                 movwf   IIF0L           ; save L-sum in IIFL
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 37
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 38
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0197   0ABE           00611                    incf IIF0H,F
+0198   00BF           00612                 movwf   IIF0L           ; save L-sum in IIFL
                       00613                 
 0199   0836           00614                 movf    II0H,W          ; get H-Bite of last measuring
 019A   0738           00615                 addwf   II1H,W
@@ -2179,14 +2240,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00006 ;                                                                     *
                       00007 ;    Filename:      2510.asm                                          *
                       00008 ;    Date:          20.11.00                                          *
-                      00009 ;    Last Update:   19.09.02                                          *
-                      00010 ;    File Version:  V5.0                                              *
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 38
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 39
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00009 ;    Last Update:   19.09.02                                          *
+                      00010 ;    File Version:  V5.0                                              *
                       00011 ;                                                                     *
                       00012 ;    Author:        Michael Zürcher                                   *
                       00013 ;                                                                     *
@@ -2238,14 +2299,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00059                 movlw   Reg
                       00060                 call    Write2510
                       00061                 ENDM
-                      00062 
-                      00063 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 39
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 40
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00062 
+                      00063 
                       00064 ;**********************************************************************
                       00065 ;               INIT MCP2510 CAN-Controller
                       00066 ;
@@ -2297,14 +2358,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00096                                                 ; no int on Message error/Wakeup/EFLG error
                       00097 
                       00098 
-                      00099 ;***********************************************************************
-                      00100 ;   Configure TX
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 40
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 41
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00099 ;***********************************************************************
+                      00100 ;   Configure TX
                       00101 ;***********************************************************************
                       00102                 SPI_WriteL TXB0CTRL,B'00000011' ; TX0 has Highest Message Priority
 01C1   3003               M                 movlw   B'00000011'
@@ -2356,14 +2417,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                                             
 01E1   3000               M                 movlw   0x00
 01E2   00E8               M                 movwf   RegData2510
-01E3   3051               M                 movlw   0x51
-01E4   2???               M                 call    Write2510
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 41
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 42
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+01E3   3051               M                 movlw   0x51
+01E4   2???               M                 call    Write2510
                       00115                 SPI_WriteL TXB2SIDL,0x00        ; Identifier Low for TX1, never used    
 01E5   3000               M                 movlw   0x00
 01E6   00E8               M                 movwf   RegData2510
@@ -2415,14 +2476,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00134                 SPI_WriteL RXM0SIDL,B'11100000' ; acceptance filter mask 0 low
 0201   30E0               M                 movlw   B'11100000'
 0202   00E8               M                 movwf   RegData2510
-0203   3021               M                 movlw   0x21
-0204   2???               M                 call    Write2510
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 42
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 43
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0203   3021               M                 movlw   0x21
+0204   2???               M                 call    Write2510
                       00135                                 
                       00136                 SPI_WriteD RXF1SIDH,IDTrackerRXH; acceptance filter 1 high
 0205   0852               M                 movf    IDTrackerRXH,W
@@ -2474,14 +2535,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0227   3010               M                 movlw   0x10
 0228   2???               M                 call    Write2510
                       00149                 SPI_WriteL RXF3SIDL,B'00000000' ; acceptance filter 3 low
-0229   3000               M                 movlw   B'00000000'
-022A   00E8               M                 movwf   RegData2510
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 43
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 44
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0229   3000               M                 movlw   B'00000000'
+022A   00E8               M                 movwf   RegData2510
 022B   3011               M                 movlw   0x11
 022C   2???               M                 call    Write2510
                       00150 
@@ -2533,14 +2594,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00176 
 0243   2???           00177 Reset2510       call    InitSPIBuf
                       00178 
-0244   30C0           00179                 movlw   RESET2510
-0245   2???           00180                 call    LoadSPIByte     ; reset MCP2510
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 44
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 45
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0244   30C0           00179                 movlw   RESET2510
+0245   2???           00180                 call    LoadSPIByte     ; reset MCP2510
                       00181 
 0246   2???           00182                 call    ExchangeSPI     ; start SPI transaction
 0247   2???           00183                 call    WaitSPIExchange ; wait SPI transaction complete
@@ -2592,14 +2653,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00229 ;               NOTE: data format under SPI bus
                       00230 ;                     SI pin -> instruction / address / data
                       00231 ;                     SO pin ->    ---      /   ---   / ---
-                      00232 ;**********************************************************************
-0257   00E9           00233 Write2510       movwf   RegAdr2510      ; hold address
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 45
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 46
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00232 ;**********************************************************************
+0257   00E9           00233 Write2510       movwf   RegAdr2510      ; hold address
                       00234 
 0258   2???           00235                 call    InitSPIBuf      ; init SPI buffer
                       00236 
@@ -2651,14 +2712,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00282 ;               GET STATUS bits for transmit/receive functions 
                       00283 ;
                       00284 ;               NOTE: data format under SPI bus
-                      00285 ;                     SI pin -> instruction /  ---   /     ---
-                      00286 ;                     SO pin ->    ---      /  data  / repeat data
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 46
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 47
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00285 ;                     SI pin -> instruction /  ---   /     ---
+                      00286 ;                     SO pin ->    ---      /  data  / repeat data
                       00287 ;**********************************************************************
 026A   2???           00288 Status2510      call    InitSPIBuf      ; init SPI buffer
                       00289 
@@ -2710,14 +2771,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00335 
                       00336 ;**********************************************************************
                       00337 ;               SET NORMAL MODE OF MCP2510 CAN-Controller 
-                      00338 ;
-                      00339 ;               NOTE: - Set normal operation mode
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 47
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 48
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00338 ;
+                      00339 ;               NOTE: - Set normal operation mode
                       00340 ;                     - CLKOUT pin disable
                       00341 ;**********************************************************************
 027F   30E0           00342 NormalMode2510  movlw   B'11100000'     ; mask bits
@@ -2769,14 +2830,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00020 ;    Notes:                                                           *
                       00021 ;    - Main program : mpptng.asm                                      *
                       00022 ;                                                                     *
-                      00023 ;**********************************************************************
-                      00024 ;                                                                     *
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 48
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 49
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00023 ;**********************************************************************
+                      00024 ;                                                                     *
                       00025 ;    Ports config:                                                    *
                       00026 ;                                                                     *
                       00027 ;    port ra0   an0     i       Analog Umes_in                                * 
@@ -2828,14 +2889,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0294   018C           00072                         clrf    PIE1_P                  ; clear peripheral interrupts
                       00073        
 0295   308D           00074                         movlw   B'10001101'     ; pullup off / falling edge for RB0/INT pin
-                      00075                                                                         ; Watchdog Prescaler is 101 = 1:
-                            32 = 0.625s
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 49
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 50
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00075                                                                         ; Watchdog Prescaler is 101 = 1:
+                            32 = 0.625s
                       00076                                                                         ; Watchdog Timer must be enabled
                              on download "2007h"
 0296   0081           00077                         movwf   OPTION_REG_P    
@@ -2887,14 +2948,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00120 
 02B5   30C8           00121                         movlw   B'11001000'     ; enable peripheral interrupt, disables RB0/INT
                       00122                                                                 ; enable port B change interrupt
-02B6   008B           00123                         movwf   INTCON
-                      00124                                         
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 50
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 51
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+02B6   008B           00123                         movwf   INTCON
+                      00124                                         
 02B7   0008           00125                         RETURN
                       00126 
                       00093 
@@ -2946,14 +3007,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 02C1   0AD2           00045                    incf    IDTrackerRXH,F       
                       00046 
 02C2   0808           00047                 movf    PORTD,W         ; read switches
-02C3   3907           00048                 andlw   B'00000111'
-02C4   1003           00049                 bcf     _C
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 51
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 52
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+02C3   3907           00048                 andlw   B'00000111'
+02C4   1003           00049                 bcf     _C
 02C5   00D1           00050                 movwf   IDTrackerTXL
 02C6   0DD1           00051                 rlf     IDTrackerTXL,F  ; shift left four positions
 02C7   0DD1           00052                 rlf     IDTrackerTXL,F
@@ -3005,14 +3066,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00098 UpdateTX0       SPI_WriteL TXB0DLC,0x07         ; 7 bytes to send
 02D5   3007               M                 movlw   0x07
 02D6   00E8               M                 movwf   RegData2510
-02D7   3035               M                 movlw   0x35
-02D8   2???               M                 call    Write2510
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 52
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 53
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+02D7   3035               M                 movlw   0x35
+02D8   2???               M                 call    Write2510
                       00099                 
 02D9   086E           00100                 movf    GenFlags,W              ; add GenFlags to UinH Byte
 02DA   390F           00101                 andlw   B'00001111'
@@ -3064,14 +3125,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0301   00C3           00123                 movwf   TAMBL
                       00124                 SPI_WriteD TXB0D6,TAMBL 
 0302   0843               M                 movf    TAMBL,W
-0303   00E8               M                 movwf   RegData2510
-0304   303C               M                 movlw   0x3C
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 53
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 54
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0303   00E8               M                 movwf   RegData2510
+0304   303C               M                 movlw   0x3C
 0305   2???               M                 call    Write2510
                       00125 
                       00126 ;               call    GetTCooler
@@ -3123,14 +3184,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 031F   2???           00172                 call    Read2510
 0320   00F6           00173                 movwf   Temp4
 0321   1C76           00174                 btfss   Temp4,0
-0322   0008           00175                         RETURN          
-                      00176 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 54
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 55
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0322   0008           00175                         RETURN          
+                      00176 
 0323   2???           00177                 call    GetFilteredIin                          ; get actual values
 0324   2???           00178                 call    GetFilteredUout
 0325   2???           00179                 call    GetFilteredUin
@@ -3182,14 +3243,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00022 ;                                                                     *
                       00023 ;**********************************************************************
                       00024 ;                                                                     *
-                      00025 ;    Config:                                                          *
-                      00026 ;                                                                     *
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 55
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 56
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00025 ;    Config:                                                          *
+                      00026 ;                                                                     *
                       00027 ;    PWM1 -> CCP1 (pin 36) -> Aux pulse (Sa')                         *
                       00028 ;            Duty cycle : 016h (0000010110b)                          *
                       00029 ;                                                                     *
@@ -3241,14 +3302,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0348   0000           00071 PWMon           nop
 0349   1597           00072                 bsf     CCP1CON,3       ; set PWM1 mode
 034A   1517           00073                 bsf     CCP1CON,2
-034B   159D           00074                 bsf     CCP2CON,3       ; set PWM2 mode
-034C   151D           00075                 bsf     CCP2CON,2
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 56
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 57
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+034B   159D           00074                 bsf     CCP2CON,3       ; set PWM2 mode
+034C   151D           00075                 bsf     CCP2CON,2
                       00076 
 034D   1007           00077                 bcf     ENA_FET
                       00078                 
@@ -3300,14 +3361,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00124 ;               IN: DUTY2_H, DUTY2_L (xxxxxxxx xx000000)
                       00125 ;**********************************************************************
                       00126 
-                      00127 IncDuty         BANK1
-0363   1683               M         bsf     STATUS,5    ; Select page 1
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 57
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 58
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00127 IncDuty         BANK1
+0363   1683               M         bsf     STATUS,5    ; Select page 1
 0364   0824           00128                 movf    STEP_L,w
                       00129                 BANK0
 0365   1283               M         bcf     STATUS,5    ; Select page 0
@@ -3359,14 +3420,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0381   084E               M           movfw     DUTY2_H
                           M           jmpWltL   0x0E,LimitIt
 0382   3C0E               M         sublw   0x0E
-                          M         skipC
-0383   1C03               M         btfss   _C
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 58
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 59
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                          M         skipC
+0383   1C03               M         btfss   _C
 0384   1503               M         bsf     _Z
                           M         jmpNZ   LimitIt
 0385   1D03               M         btfss   _Z
@@ -3418,14 +3479,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00025 ;**********************************************************************
                       00026 ;               INIT SPI PORT
                       00027 ;
-                      00028 ;               SPI Master, Idle high, Fosc/4, no collision
-                      00029 ;**********************************************************************
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 59
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 60
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00028 ;               SPI Master, Idle high, Fosc/4, no collision
+                      00029 ;**********************************************************************
                       00030 
 0394   1294           00031 InitSPIPort     bcf     SSPCON,SSPEN    ; disable SPI Module
                       00032 
@@ -3477,14 +3538,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00076 ;**********************************************************************
                       00077 ;               WAIT SPI TRANSACTION TO BE COMPLETE
                       00078 ;**********************************************************************
-                      00079 
-03AB   0064           00080 WaitSPIExchange clrwdt                  ; reset watchdog
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 60
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 61
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00079 
+03AB   0064           00080 WaitSPIExchange clrwdt                  ; reset watchdog
 03AC   08D4           00081                 movf    SPICounter,F
 03AD   1D03           00082                 btfss   STATUS,Z
 03AE   2???           00083                   goto  WaitSPIExchange
@@ -3536,14 +3597,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 03BF   00D5           00129                 movwf   SPIBufPointer   ; set pointer at start of buffer
 03C0   0084           00130                 movwf   FSR             ; set FSR at start of buffer
 03C1   0008           00131                 RETURN
-                      00132 
-                      00133 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 61
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 62
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00132 
+                      00133 
                       00134 ;**********************************************************************
                       00135 ;               INTSPI (SPI interrupt)
                       00136 ;
@@ -3595,14 +3656,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00008 ;    Date:          13.03.01                                          *
                       00009 ;    Last Update:   28.09.01                                          *
                       00010 ;    File Version:  V3.0                                              *
-                      00011 ;                                                                     *
-                      00012 ;    Author:        Michael Zürcher                                               *
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 62
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 63
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00011 ;                                                                     *
+                      00012 ;    Author:        Michael Zürcher                                               *
                       00013 ;                                                                     *
                       00014 ;    Company:       HTA-Biel/Bienne Indulab                           *
                       00015 ;                                                                     *
@@ -3654,14 +3715,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00061 ;   +     -     -     -      -    I) incidense decreased meanwhile
                       00062 ;   +     -     -     +      +    J) V>Vmpp, keep decreasing delta
                       00063 ;   +     -     +     -      +    K) invalid
-                      00064 ;   +     -     +     +      +    L) invalid, cc applies
-                      00065 ;   +     +     -     -      -    M) V<Vmpp, increase delta again
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 63
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 64
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00064 ;   +     -     +     +      +    L) invalid, cc applies
+                      00065 ;   +     +     -     -      -    M) V<Vmpp, increase delta again
                       00066 ;   +     +     -     +      -    N) incidence increased meanwhile, cc applies
                       00067 ;   +     +     +     -      +    O) MPP is reached, inverse delta
                       00068 ;   +     +     +     +      +    P) unclear, control condition applies
@@ -3703,8 +3764,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 03E1   2???               M         goto    MeasIin
                       00090                 jmpFleL UIF0L,MINUINL,UVState           ; consider L-Byte
 03E2   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,UVState
-03E3   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,UVState
+03E3   3CDE               M         sublw   0xDE
 03E4   1803               M         btfsc   _C
 03E5   2???               M         goto    UVState
 03E6   2???           00091                 goto    MeasIin
@@ -3713,14 +3774,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00094                 
 03E8   2???           00095 MeasIin         call    GetFilteredIin                  ; Measure the current input current
                       00096 
-03E9   2???           00097                 call    MinPower                                        ; call Minpower Test Subroutine
-                      00098 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 64
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 65
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+03E9   2???           00097                 call    MinPower                                        ; call Minpower Test Subroutine
+                      00098 
 03EA   2???           00099                 call    SetVSFup                                        ; Prepare Voltage Signum Flags f
                             or the Decision Tree
 03EB   2???           00100                 call    SetPSFup                                        ; Prepare Current Signum Flags f
@@ -3745,8 +3806,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 03F6   2???               M         goto    ConstVMode
                       00105                 jmpFleL UOFL,MAXUOL,MeasTemp            ; consider L-Byte
 03F7   0835               M           movfw     UOFL
-                          M           jmpWleL   0x55,MeasTemp
-03F8   3C55               M         sublw   0x55
+                          M           jmpWleL   0x82,MeasTemp
+03F8   3C82               M         sublw   0x82
 03F9   1803               M         btfsc   _C
 03FA   2???               M         goto    MeasTemp
                       00106                 
@@ -3772,14 +3833,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0402   1C20           00125 PosP            btfss   VSF,0           
 0403   2???           00126                    goto NegDV
 0404   2???           00127                 goto  PosDV
-0405   1C20           00128 NegP            btfss   VSF,0
-0406   2???           00129                    goto PosDV
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 65
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 66
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0405   1C20           00128 NegP            btfss   VSF,0
+0406   2???           00129                    goto PosDV
 0407   2???           00130                 goto  NegDV
                       00131 ;----------------------------------------------------------------------
                       00132 
@@ -3831,14 +3892,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00175 
                       00176 ;**********************************************************************
                       00177 ;               Actualize voltage signum Flags
-                      00178 ;
-                      00179 ;               - Result register (-------- or ++++++++) 1 = -, 0 = +
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 66
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 67
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00178 ;
+                      00179 ;               - Result register (-------- or ++++++++) 1 = -, 0 = +
                       00180 ;               OUT: VSF
                       00181 ;**********************************************************************
 0420   0828           00182 SetVSFup        movf    UIF0H,W         ;compare current with former UIF_H
@@ -3890,14 +3951,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00224 
                       00225 
                       00098 ;Temperature Procedure
-                      00099 #include        "celsius.asm"           ; Converts temperatures to degs C
-                      00001 ;**********************************************************************
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 67
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 68
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00099 #include        "celsius.asm"           ; Converts temperatures to degs C
+                      00001 ;**********************************************************************
                       00002 ;   P R O G R A M M     MPPTnG                                        *
                       00003 ;                                                                     *
                       00004 ;   Temperature values converter Version: Celsius                     *
@@ -3949,14 +4010,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 044C   1C03               M         btfss   _C
 044D   2???               M         goto    C65
 044E   1903               M         btfsc   _Z
-044F   2???               M         goto    C65
-                      00029                 jmpFgeL TCL,0x46,C60
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 68
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 69
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+044F   2???               M         goto    C65
+                      00029                 jmpFgeL TCL,0x46,C60
 0450   0847               M           movfw     TCL
                           M           jmpWgeL   0x46,C60
 0451   3C46               M         sublw   0x46
@@ -4008,14 +4069,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0474   0847               M           movfw     TCL
                           M           jmpWgeL   0x12,C30
 0475   3C12               M         sublw   0x12
-0476   1C03               M         btfss   _C
-0477   2???               M         goto    C30
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 69
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 70
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0476   1C03               M         btfss   _C
+0477   2???               M         goto    C30
 0478   1903               M         btfsc   _Z
 0479   2???               M         goto    C30
                       00036                 jmpFgeL TCL,0x11,C25
@@ -4067,14 +4128,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                           M           jmpWgeL   0xA6,NoCels
 049B   3CA6               M         sublw   0xA6
 049C   1C03               M         btfss   _C
-049D   2???               M         goto    NoCels
-049E   1903               M         btfsc   _Z
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 70
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 71
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+049D   2???               M         goto    NoCels
+049E   1903               M         btfsc   _Z
 049F   2???               M         goto    NoCels
                       00046                 jmpFgeL TAMBL,0xA3,C90
 04A0   0843               M           movfw     TAMBL
@@ -4126,14 +4187,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 04C3   2???               M         goto    C65
                       00052                 jmpFgeL TAMBL,0x8C,C60
 04C4   0843               M           movfw     TAMBL
-                          M           jmpWgeL   0x8C,C60
-04C5   3C8C               M         sublw   0x8C
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 71
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 72
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                          M           jmpWgeL   0x8C,C60
+04C5   3C8C               M         sublw   0x8C
 04C6   1C03               M         btfss   _C
 04C7   2???               M         goto    C60
 04C8   1903               M         btfsc   _Z
@@ -4185,14 +4246,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 04EA   1C03               M         btfss   _C
 04EB   2???               M         goto    C30
 04EC   1903               M         btfsc   _Z
-04ED   2???               M         goto    C30
-                      00059                 jmpFgeL TAMBL,0x70,C25
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 72
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 73
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+04ED   2???               M         goto    C30
+                      00059                 jmpFgeL TAMBL,0x70,C25
 04EE   0843               M           movfw     TAMBL
                           M           jmpWgeL   0x70,C25
 04EF   3C70               M         sublw   0x70
@@ -4244,14 +4305,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0517   302D           00087 C45     movlw   0x2D
 0518   0008           00088         RETURN
 0519   3028           00089 C40     movlw   0x28
-051A   0008           00090         RETURN
-051B   3023           00091 C35     movlw   0x23
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 73
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 74
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+051A   0008           00090         RETURN
+051B   3023           00091 C35     movlw   0x23
 051C   0008           00092         RETURN
 051D   301E           00093 C30     movlw   0x1E
 051E   0008           00094         RETURN
@@ -4303,14 +4364,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00037                 jmpFltL UIF0H,MINUINH,CV_UVState1       ; jmp, if minimal voltage not reached
 052E   0828               M           movfw     UIF0H
                           M           jmpWltL   0x00,CV_UVState1
-052F   3C00               M         sublw   0x00
-                          M         skipC
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 74
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 75
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+052F   3C00               M         sublw   0x00
+                          M         skipC
 0530   1C03               M         btfss   _C
 0531   1503               M         bsf     _Z
                           M         jmpNZ   CV_UVState1
@@ -4324,8 +4385,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0537   2???               M         goto    CV_MeasUout1
                       00039                 jmpFleL UIF0L,MINUINL,CV_UVState1       ; consider L-Byte
 0538   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,CV_UVState1
-0539   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,CV_UVState1
+0539   3CDE               M         sublw   0xDE
 053A   1803               M         btfsc   _C
 053B   2???               M         goto    CV_UVState1
 053C   2???           00040                 goto    CV_MeasUout1
@@ -4338,9 +4399,9 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00047                 
 053F   2???           00048                 call    GetFilteredUout
                       00049                 
-0540   3001           00050                 movlw   MINUBATH                        ;get 3/4 of MINUBAT
+0540   3002           00050                 movlw   MINUBATH                        ;get 3/4 of MINUBAT
 0541   00F1           00051                 movwf   Temp0
-0542   30AA           00052                 movlw   MINUBATL
+0542   3030           00052                 movlw   MINUBATL
 0543   00F2           00053                 movwf   Temp1
                       00054 
 0544   1003           00055                 bcf     _C                                                      ;divide by 2
@@ -4362,14 +4423,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0551   0271               M         subwf   Temp0,W
                           M         skipC
 0552   1C03               M         btfss   _C
-0553   1503               M         bsf     _Z
-                          M         jmpNZ   BoostALittle
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 75
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 76
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0553   1503               M         bsf     _Z
+                          M         jmpNZ   BoostALittle
 0554   1D03               M         btfss   _Z
 0555   2???               M         goto    BoostALittle
 0556   0834           00069                 movf    UOFH,W
@@ -4399,7 +4460,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0565   0064           00084                 clrwdt                                                          ; reset watchdog
 0566   2???           00085                 call    UpdateCAN
 0567   2???           00086                 call    GetFilteredUout                         ;MINUBAT<=UOUT<=MAXUOUT
-0568   3001           00087                 movlw   MINUBATH
+0568   3002           00087                 movlw   MINUBATH
 0569   0234           00088                 subwf   UOFH,w
 056A   1903           00089                 btfsc   _Z
 056B   2???           00090                         goto    CheckLsb
@@ -4410,7 +4471,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 056E   2???           00094                 goto    CheckMaxuout
                       00095 
 056F                  00096 CheckLsb        
-056F   30AA           00097                 movlw   MINUBATL
+056F   3030           00097                 movlw   MINUBATL
 0570   0235           00098                 subwf   UOFL,W
 0571   1C03           00099                 btfss   _C                                                      ;c set if w=UOFL-MINUBAT
                             L >=0   
@@ -4421,14 +4482,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00104 
 0573   3002           00105                 movlw   MAXUOH
 0574   00F2           00106                 movwf   Temp1
-0575   0834           00107                 movf    UOFH,w                                  
-0576   0272           00108                 subwf   Temp1,w
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 76
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 77
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0575   0834           00107                 movf    UOFH,w                                  
+0576   0272           00108                 subwf   Temp1,w
 0577   1903           00109                 btfsc   _Z
 0578   2???           00110                         goto    CheckLsb2
 0579   1C03           00111                 btfss   _C                                                      ;c set if w=MAXUOH-UOFH 
@@ -4438,7 +4499,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 057B   2???           00114                 goto    BatConn
                       00115 
 057C                  00116 CheckLsb2       
-057C   3055           00117                 movlw   MAXUOL
+057C   3082           00117                 movlw   MAXUOL
 057D   00F2           00118                 movwf   Temp1
 057E   0835           00119                 movfw   UOFL
 057F   0272           00120                 subwf   Temp1,W
@@ -4469,8 +4530,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 058D   2???               M         goto    CV_MeasUout2
                       00131                 jmpFleL UIF0L,MINUINL,CV_UVState2       ; consider L-Byte
 058E   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,CV_UVState2
-058F   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,CV_UVState2
+058F   3CDE               M         sublw   0xDE
 0590   1803               M         btfsc   _C
 0591   2???               M         goto    CV_UVState2
 0592   2???           00132                 goto    CV_MeasUout2
@@ -4480,14 +4541,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00136 
 0594   2???           00137                 call    GetFilteredUin                          ;check Uin and transform in to 8bit valu
                             e
-0595   0CA8           00138                 rrf             UIF0H,F 
-0596   0CA9           00139                 rrf             UIF0L,F
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 77
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 78
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0595   0CA8           00138                 rrf             UIF0H,F 
+0596   0CA9           00139                 rrf             UIF0L,F
 0597   0CA8           00140                 rrf             UIF0H,F
 0598   0CA9           00141                 rrf             UIF0L,F
 0599   3053           00142                 movlw   0x53                                            ;50V @ 8bit ADC
@@ -4539,14 +4600,14 @@ Message[305]: Using default destination of 1 (file).
 05BD   1803           00185                 btfsc   STATUS, C               ; is result of subtraction negative?
 05BE   2???           00186           goto  Overflow    
 05BF                  00187 CheckMSB
-05BF   0834           00188                 movfw   UOFH                            ; compare Uout_old High Byte to Uout High Byte T
-                            emp0=Temp0-UOFH
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 78
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 79
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+05BF   0834           00188                 movfw   UOFH                            ; compare Uout_old High Byte to Uout High Byte T
+                            emp0=Temp0-UOFH
 05C0   07F1           00189                 addwf   Temp0,F
 05C1   1C03           00190                 btfss   STATUS,C                        ;is result of subtraction negativ?
 05C2   2???           00191                         goto    Twocomplement
@@ -4598,14 +4659,14 @@ Message[305]: Using default destination of 1 (file).
 05E3   0008           00234                 RETURN
                       00235 
                       00236 
-                      00237                 
-                      00103 #include        "noload.asm"            ; no load at output
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 79
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 80
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00237                 
+                      00103 #include        "noload.asm"            ; no load at output
                       00001 ;**********************************************************************
                       00002 ;   P R O G R A M M     MPPTnG                                        *
                       00003 ;                                                                     *
@@ -4657,14 +4718,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 05F2   2???               M         goto    DeCharge
                       00035                 jmpFleL UOFL,MAXUOL,ResNOC      ; consider L-Byte
 05F3   0835               M           movfw     UOFL
-                          M           jmpWleL   0x55,ResNOC
-05F4   3C55               M         sublw   0x55
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 80
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 81
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                          M           jmpWleL   0x82,ResNOC
+05F4   3C82               M         sublw   0x82
 05F5   1803               M         btfsc   _C
 05F6   2???               M         goto    ResNOC
                       00036 
@@ -4716,14 +4777,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00030                 jmpFltL UIF0H,MINUINH,UnderVoltageloop  ; jmp, if minimal voltage not reached
 0601   0828               M           movfw     UIF0H
                           M           jmpWltL   0x00,UnderVoltageloop
-0602   3C00               M         sublw   0x00
-                          M         skipC
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 81
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 82
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0602   3C00               M         sublw   0x00
+                          M         skipC
 0603   1C03               M         btfss   _C
 0604   1503               M         bsf     _Z
                           M         jmpNZ   UnderVoltageloop
@@ -4737,8 +4798,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 060A   2???               M         goto    EnoughVin
                       00032                 jmpFleL UIF0L,MINUINL,UnderVoltageloop  ; consider L-Byte
 060B   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,UnderVoltageloop
-060C   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,UnderVoltageloop
+060C   3CDE               M         sublw   0xDE
 060D   1803               M         btfsc   _C
 060E   2???               M         goto    UnderVoltageloop
 060F   2???           00033                 goto    EnoughVin
@@ -4775,14 +4836,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00015 ;                                                                     *
                       00016 ;    Changes:       program part which waits for sufficient input     *
                       00017 ;                   voltage                                           *
-                      00018 ;                                                                     *
-                      00019 ;**********************************************************************
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 82
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 83
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00018 ;                                                                     *
+                      00019 ;**********************************************************************
                       00020 ;                                                                     *
                       00021 ;    Notes:                                                           *
                       00022 ;    - Main program : mpptngv4.asm                                    *
@@ -4834,14 +4895,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0636   1D03           00046                 btfss   _Z
 0637   03A2           00047                    decf    PminCounter,F
                       00048                 BANK0
-0638   1283               M         bcf     STATUS,5    ; Select page 0
-                      00049 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 83
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 84
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0638   1283               M         bcf     STATUS,5    ; Select page 0
+                      00049 
 0639   0000           00050 RetFromPMin     nop
 063A   0008           00051                 RETURN
                       00052                 
@@ -4887,20 +4948,20 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0641   00F6           00035                 movwf   Temp4
 0642   3002           00036                 movlw   MAXUOH
 0643   00F7           00037                 movwf   Temp5
-0644   3055           00038                 movlw   MAXUOL
+0644   3082           00038                 movlw   MAXUOL
 0645   07F6           00039                 addwf   Temp4,f
 0646   1803           00040                 btfsc   STATUS,C
 Message[305]: Using default destination of 1 (file).
 0647   0AF7           00041                         incf    Temp5
                       00042                 
-0648   0877           00043                 movfw   Temp5
-0649   00F2           00044                 movwf   Temp1
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 84
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 85
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+0648   0877           00043                 movfw   Temp5
+0649   00F2           00044                 movwf   Temp1
 064A   0834           00045                 movf    UOFH,w                                  
 064B   0272           00046                 subwf   Temp1,w
 064C   1903           00047                 btfsc   _Z
@@ -4948,18 +5009,18 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0667   2???               M         goto    CV_MeasUout3
                       00074                 jmpFleL UIF0L,MINUINL,CV_UVState3       ; consider L-Byte
 0668   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,CV_UVState3
-0669   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,CV_UVState3
+0669   3CDE               M         sublw   0xDE
 066A   1803               M         btfsc   _C
 066B   2???               M         goto    CV_UVState3
-066C   2???           00075                 goto    CV_MeasUout3
-                      00076 
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 85
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 86
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+066C   2???           00075                 goto    CV_MeasUout3
+                      00076 
 066D   2???           00077 CV_UVState3     call    UnderVoltage
 066E                  00078 CV_MeasUout3
                       00079 
@@ -4983,8 +5044,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0678   2???               M         goto    DeCharge1
                       00084                 jmpFleL UOFL,MAXUOL,ClearNOC    ; consider L-Byte
 0679   0835               M           movfw     UOFL
-                          M           jmpWleL   0x55,ClearNOC
-067A   3C55               M         sublw   0x55
+                          M           jmpWleL   0x82,ClearNOC
+067A   3C82               M         sublw   0x82
 067B   1803               M         btfsc   _C
 067C   2???               M         goto    ClearNOC
                       00085 
@@ -5011,14 +5072,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0688   3C00               M         sublw   0x00
                           M         skipC
 0689   1C03               M         btfss   _C
-068A   1503               M         bsf     _Z
-                          M         jmpNZ   CV_UVState
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 86
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 87
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+068A   1503               M         bsf     _Z
+                          M         jmpNZ   CV_UVState
 068B   1D03               M         btfss   _Z
 068C   2???               M         goto    CV_UVState
                       00103                 jmpFgtL UIF0H,MINUINH,CV_MeasUout       ; go on, if minimal reached
@@ -5029,8 +5090,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0690   2???               M         goto    CV_MeasUout
                       00104                 jmpFleL UIF0L,MINUINL,CV_UVState        ; consider L-Byte
 0691   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,CV_UVState
-0692   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,CV_UVState
+0692   3CDE               M         sublw   0xDE
 0693   1803               M         btfsc   _C
 0694   2???               M         goto    CV_UVState
 0695   2???           00105                 goto    CV_MeasUout
@@ -5061,8 +5122,8 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 06A3   2???               M         goto    CheckBatCon
                       00117                 jmpFleL UOFL,MAXUOL,MPPTtracking        ; consider L-Byte
 06A4   0835               M           movfw     UOFL
-                          M           jmpWleL   0x55,MPPTtracking
-06A5   3C55               M         sublw   0x55
+                          M           jmpWleL   0x82,MPPTtracking
+06A5   3C82               M         sublw   0x82
 06A6   1803               M         btfsc   _C
 06A7   2???               M         goto    MPPTtracking
 06A8   2???           00118                 goto    Wait4Connect1
@@ -5070,14 +5131,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 06A9   2???           00120                 goto    Wait4Connect1
                       00121         
                       00122 ;**********************************************************************
-                      00107 #include        "overtemp.asm"          ; 
-                      00001 ;**********************************************************************
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 87
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 88
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00107 #include        "overtemp.asm"          ; 
+                      00001 ;**********************************************************************
                       00002 ;   P R O G R A M M     MPPTnG                                            *
                       00003 ;                                                                     *
                       00004 ;   Undervoltage routine                                                                  *
@@ -5129,22 +5190,22 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                           M         jmpNZ   OT_UVState
 06B7   1D03               M         btfss   _Z
 06B8   2???               M         goto    OT_UVState
-                      00042                 jmpFgtL UIF0H,MINUINH,OT_MeasTemp       ; go on, if minimal reached
-06B9   0828               M           movfw     UIF0H
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 88
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 89
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+                      00042                 jmpFgtL UIF0H,MINUINH,OT_MeasTemp       ; go on, if minimal reached
+06B9   0828               M           movfw     UIF0H
                           M           jmpWgtL   0x00,OT_MeasTemp
 06BA   3C00               M         sublw   0x00
 06BB   1C03               M         btfss   _C
 06BC   2???               M         goto    OT_MeasTemp
                       00043                 jmpFleL UIF0L,MINUINL,OT_UVState        ; consider L-Byte
 06BD   0829               M           movfw     UIF0L
-                          M           jmpWleL   0xAD,OT_UVState
-06BE   3CAD               M         sublw   0xAD
+                          M           jmpWleL   0xDE,OT_UVState
+06BE   3CDE               M         sublw   0xDE
 06BF   1803               M         btfsc   _C
 06C0   2???               M         goto    OT_UVState
 06C1   2???           00044                 goto    OT_MeasTemp
@@ -5188,14 +5249,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 06D5   2???           00116                 call    InitADC                 ; Initialize A/D Converters
                       00117 
 06D6   1D06           00118                 btfss   CAN_PRE                 ; skip next line if CAN_PRE = 0
-06D7   2???           00119                 goto    monOVC1
-06D8   0808           00120                 movf    PORTD,W                 ; read A0-A3
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 89
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 90
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+06D7   2???           00119                 goto    monOVC1
+06D8   0808           00120                 movf    PORTD,W                 ; read A0-A3
 06D9   390F           00121                 andlw   B'00001111'             ; mask A0-A3 Bits
 06DA   1903           00122                 btfsc   _Z      
 06DB   2???           00123             goto        monOVC1
@@ -5233,7 +5294,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00154         
 06F0   2???           00155                         goto    monOVC1
                       00156 
-06F1   3055           00157 LowByte1        movlw   MAXUOL
+06F1   3082           00157 LowByte1        movlw   MAXUOL
 06F2   022D           00158                         subwf   UO0L,W
 06F3   1803           00159                         btfsc   _C
 06F4   2???           00160                         goto    monOVC1
@@ -5247,14 +5308,14 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00168 ; Overheat
                       00169 ;----------------------------------------------------------------------
                       00170 
-06F8   1388           00171 OVH_LOOP1       bcf     RES_OVH                 ; Reset OVH-Flip-Flop
-06F9   2???           00172                         call    wait20ms
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 90
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 91
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
+06F8   1388           00171 OVH_LOOP1       bcf     RES_OVH                 ; Reset OVH-Flip-Flop
+06F9   2???           00172                         call    wait20ms
 06FA   1788           00173                         bsf     RES_OVH
                       00174 
                       00175 ;----------------------------------------------------------------------
@@ -5286,7 +5347,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0701   2???           00199                         goto    TrackingLoop
                       00200 
 3F36                  00201                         END                                     ; directive 'end of program'
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 91
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 92
 
 
 SYMBOL TABLE
@@ -5345,7 +5406,7 @@ C95                               00000503
 CANCTRL                           0x0F
 CANCTRL1                          0x1F
 CANCTRL2                          0x2F
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 92
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 93
 
 
 SYMBOL TABLE
@@ -5404,7 +5465,7 @@ CHANNEL6                          B'10110000'
 CHS0                              00000003
 CHS1                              00000004
 CHS2                              00000005
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 93
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 94
 
 
 SYMBOL TABLE
@@ -5463,7 +5524,7 @@ EEDATA                            0000010C
 EEDATH                            0000010E
 EEIE                              00000004
 EEIF                              00000004
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 94
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 95
 
 
 SYMBOL TABLE
@@ -5522,7 +5583,7 @@ INITDUTY                          0x74
 INIT_IO_A                         B'00101111'
 INIT_IO_AD                        B'10000001'
 INIT_IO_B                         B'00111101'
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 95
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 96
 
 
 SYMBOL TABLE
@@ -5566,13 +5627,13 @@ LowByte1                          000006F1
 MAXTCH                            0x02
 MAXTCL                            0xBB
 MAXUOH                            0x02
-MAXUOL                            0x55
+MAXUOL                            0x82
 MINPINL                           0x26
 MINPINM                           0x16
-MINUBATH                          0x01
-MINUBATL                          0xAA
+MINUBATH                          0x02
+MINUBATL                          0x30
 MINUINH                           0x00
-MINUINL                           0xAD
+MINUINL                           0xDE
 MMXX                              0000040D
 MPPTtracking                      000003D2
 MPXM                              00000410
@@ -5581,7 +5642,7 @@ MXXX                              0000040B
 Main                              000006D4
 MeasIin                           000003E8
 MeasStableUs                      0000052D
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 96
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 97
 
 
 SYMBOL TABLE
@@ -5640,7 +5701,7 @@ PCON_P                            0000000E
 PEIE                              00000006
 PEN                               00000002
 PERIODE                           0xCF
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 97
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 98
 
 
 SYMBOL TABLE
@@ -5699,7 +5760,7 @@ RD                                00000000
 READ2510                          0x03
 READ_WRITE                        00000002
 REC                               0x1D
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 98
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 99
 
 
 SYMBOL TABLE
@@ -5758,7 +5819,7 @@ RXF1SIDL                          0x05
 RXF2EID0                          0x0B
 RXF2EID8                          0x0A
 RXF2SIDH                          0x08
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 99
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 100
 
 
 SYMBOL TABLE
@@ -5817,7 +5878,7 @@ SSPADD_P                          00000013
 SSPBUF                            00000013
 SSPCON                            00000014
 SSPCON2                           00000091
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 100
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 101
 
 
 SYMBOL TABLE
@@ -5876,7 +5937,7 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2ON                            00000002
 TOUTPS0                           00000003
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 101
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 102
 
 
 SYMBOL TABLE
@@ -5935,7 +5996,7 @@ TXB2CTRL                          0x50
 TXB2D0                            0x56
 TXB2D1                            0x57
 TXB2D2                            0x58
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 102
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 103
 
 
 SYMBOL TABLE
@@ -5994,7 +6055,7 @@ UO3H                              00000032
 UO3L                              00000033
 UOFH                              00000034
 UOFL                              00000035
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 103
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 104
 
 
 SYMBOL TABLE
@@ -6004,7 +6065,7 @@ USENSEH                           00000044
 USENSEL                           00000045
 UVState                           000003E7
 UmppH                             0x02
-UmppL                             0x3B
+UmppL                             0xb2
 UnderVoltage                      000005FF
 UnderVoltageloop                  00000610
 UnsyncIin                         000000BE
@@ -6053,7 +6114,7 @@ _CCP1IF                           PIR1,CCP1IF
 _CPD_OFF                          00003FFF
 _CPD_ON                           00003EFF
 _CP_ALL                           00000FCF
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 104
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 105
 
 
 SYMBOL TABLE
@@ -6100,7 +6161,6 @@ _WRT_ENABLE_ON                    00003FFF
 _XT_OSC                           00003FFD
 _Z                                STATUS,2
 __16F877                          00000001
-__DEBUG                           1
 bL2bV                             
 bV2bV                             
 disableInt                        
@@ -6112,13 +6172,13 @@ jmpClr
 jmpFeqF                           
 jmpFeqL                           
 jmpFeqZ                           
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 105
+jmpFgeL                           
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 106
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-jmpFgeL                           
 jmpFgtL                           
 jmpFleF                           
 jmpFleL                           
@@ -6171,13 +6231,13 @@ trABTF1                           TXB1CTRL,6
 trABTF2                           TXB2CTRL,6
 trB0BFE                           BFPCTRL,2
 trB0BFM                           BFPCTRL,0
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 106
+trB0BFS                           BFPCTRL,4
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 107
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-trB0BFS                           BFPCTRL,4
 trB0RTS                           BFPCTRL,3
 trB0RTSM                          BFPCTRL,0
 trB1BFE                           BFPCTRL,3
@@ -6230,13 +6290,13 @@ trREQOP0                          CANCTRL,5
 trREQOP1                          CANCTRL,6
 trREQOP2                          CANCTRL,7
 trRX0IE                           CANINTE,0
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 107
+trRX0IF                           CANINTF,0
+MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 108
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-trRX0IF                           CANINTF,0
 trRX0OVR                          EFLG,6
 trRX1IE                           CANINTE,1
 trRX1IF                           CANINTF,1
@@ -6285,12 +6345,6 @@ wait20ms                          00000036
 waitforedge                       
 waittoboost                       0000002A
 wb                                0000002E
-
-MPASM  5.43                      MPPTNGV6.ASM   6-15-2014  23:11:54         PAGE 108
-
-
-
-
 
 Errors   :     0
 Warnings :     0 reported,     0 suppressed
