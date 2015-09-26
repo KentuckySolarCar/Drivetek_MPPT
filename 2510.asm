@@ -95,6 +95,7 @@ SPI_WriteD	MACRO	Reg,RegData
 ;		SPI_WriteL CNF3,B'00000101'	; config register 3 of MCP2510
 
 
+;**********************************************************************
 ;
 ;   500 kbps (page 39)
 ;	Physical layer configuration:
@@ -111,10 +112,55 @@ SPI_WriteD	MACRO	Reg,RegData
 ;		- Phase Seg2 = 5 Tq  value 4
 ;		- Bus line is sampled once at the sample point
 ;		- wake-up filter disable
+;		1+2+2+5 = 10qt
 
 ;		SPI_WriteL CNF1,B'00000001'	; config register 1 of MCP2510 (Bitiming)
+;								swj =0 
+;								brp = 1
 ;		SPI_WriteL CNF2,B'10001001'	;  config register 2 of MCP2510
+;								BTLMODE = 1
+;								SAM = 0
+;								PHSEG1 = 1
+;								PRSEG = 1
+;
 ;		SPI_WriteL CNF3,B'00000100'	; config register 3 of MCP2510
+;								WAKFIL = 0
+;								PHSEG2 = 4
+
+
+
+;**********************************************************************
+;   1000 kbps (page 39)
+;	Physical layer configuration:
+;		- Fosc       = 20 MHz
+;                          Tosc = 50 ns
+;		- BRP        = 2
+;						brp value will be 0
+;						tq = tosc * brp = 50 ns * 2 = 100 ns;
+;						1000 kbps = 1 /( 100 * x)
+;		- Sync Seg   = 1 Tq
+;						hardware seg
+;		- Prop Seg   = 2 Tq  value 1
+;		- Phase Seg1 = 2 Tq	 value 1
+;		- Phase Seg2 = 5 Tq  value 4
+;		- Bus line is sampled once at the sample point
+;		- wake-up filter disable
+
+;		SPI_WriteL CNF1,B'00000001'	; config register 1 of MCP2510 (Bitiming)
+;								swj =0 
+;								brp = 1
+;		SPI_WriteL CNF2,B'10001001'	;  config register 2 of MCP2510
+;								BTLMODE = 1
+;								SAM = 0
+;								PHSEG1 = 1
+;								PRSEG = 1
+
+;		SPI_WriteL CNF3,B'00000100'	; config register 3 of MCP2510
+;								WAKFIL = 0
+;								PHSEG2 = 4
+;		1+2+2+5 = 10qt
+
+
 ;**********************************************************************
 
 
@@ -130,6 +176,8 @@ Init2510	call	Reset2510
 		movlw	CANCTRL		; CAN control register of MCP2510
 		call	BitMod2510
 
+		
+		
 		SPI_WriteL CNF1,B'00000001'	; config register 1 of MCP2510 (Bitiming)
 ;								swj =0 
 ;								brp = 1

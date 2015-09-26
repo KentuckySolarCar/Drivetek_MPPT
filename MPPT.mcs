@@ -1,0 +1,97 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\mpptngv6.o
+Folder=Intermediary
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\mpptngv6.err
+Folder=Intermediary
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\mpptngv6.lst
+Folder=Output
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\MPPT.cof
+Folder=Output
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=/o"$(TARGETBASE).cof"
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\MPPT.hex
+Folder=Output
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=/o"$(TARGETBASE).cof"
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\MPPT.cod
+Folder=Output
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=/o"$(TARGETBASE).cof"
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\Users\local_admin\Desktop\del\Drivetek_MPPT\MPPT.lst
+Folder=Output
+DeviceName=PIC16F877
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|mpptngv6.asm||<obj>||<lib>||<lkr>||
+SuiteArgsString=generate-relocatable-code
+ToolArgsString=/o"$(TARGETBASE).cof"
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{49D3CA3F-D9A3-4518-9943-226A347E8CC7}=C:\Program Files (x86)\Microchip\MPASM Suite\MPASMWIN.exe
+tool_loc{96C98149-AA1B-4CF9-B967-FAE79CAB663C}=C:\Program Files (x86)\Microchip\MPASM Suite\mplink.exe

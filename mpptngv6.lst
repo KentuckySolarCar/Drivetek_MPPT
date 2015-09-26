@@ -1,4 +1,4 @@
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  1
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00001         LIST
                       00002 ; P16F877.INC  Standard Header File, Version 1.00    Microchip Technology, Inc.
                       00373         LIST
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  2
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00050 #define RXM1EID8        0x26
                       00051 #define RXM1EID0        0x27
                       00052 #define CNF3            0x28
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  3
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00103 #define TXB2D2          0x58
                       00104 #define TXB2D3          0x59
                       00105 #define TXB2D4          0x5A
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  4
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00156 ;; Bit definitions TXRTSCTRL
                       00157 #define trB2RTS BFPCTRL,5
                       00158 #define trB1RTS BFPCTRL,4
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  5
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00209 #define trWAKIE CANINTE,6
                       00210 #define trERRIE CANINTE,5
                       00211 #define trTX2IE CANINTE,4
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  6
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00262 #define trRXM10 RXB0CTRL,6
                       00263 #define trRXM00 RXB0CTRL,5
                       00264 #define trRXRTR0        RXB0CTRL,3
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  7
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00033 
                       00034 ; Special register bit definition pairs
                       00035 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  8
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00086         bcf     PCLATH,4
                       00087         bsf     PCLATH,3
                       00088         endm
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE  9
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00139 BANK1   macro
                       00140         bsf     STATUS,5    ; Select page 1
                       00141         endm
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 10
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00192         movf    Reg,W
                       00193           sublw   bVal
                       00194         btfsc   _Z
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 11
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -647,7 +647,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00245         andlw   0xFF
                       00246         jmpNZ   Label
                       00247         endm
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 12
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -706,7 +706,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00298 
                       00299 jmpWgeL macro   bVal,Label
                       00300         sublw   bVal
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 13
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -765,7 +765,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00351 
                       00352 jmpWneF macro   Reg,Label
                       00353         subwf   Reg,W
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 14
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -824,7 +824,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00404         btfsc   Reg,Bit
                       00405         endm
                       00406 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 15
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -883,7 +883,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00002 ;                                                                     *
                       00003 ;                                                                     *
                       00004 ;   Macros for MPPTnG Version 2.0                                     *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 16
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -942,7 +942,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00055 ; Converter
                       00056 #define INV_MOS_ENA     PORTB,1         ; Enable High-Side FET switching
                       00057 #define ENA_FET         PORTC,0         ; Enable FET switching
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 17
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1001,7 +1001,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00108 ;               SPI DEFINITIONS (Constants)
                       00109 ;**********************************************************************
                       00110 #define INIT_SPI        B'00010010'     ; SPI Master, Clock idle high, Fosc/64, no collision
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 18
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1060,7 +1060,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000032            00161         UO3H                            ; ADChannel 1 (Umes_out) value high byte
   00000033            00162         UO3L                            ; ADChannel 1 (Umes_out) value low byte
   00000034            00163         UOFH                            ; Averaged (UOUT) high byte
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 19
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1119,7 +1119,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000006D            00214         IntSavePCLATH                   ; save PCLATCH
                       00215 
   0000006E            00216         GenFlags                        ; General Control Flags
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 20
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1178,7 +1178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                             oint for our trackers.
                       00032 ;The p16f877 has serveral 10 bit adc's, and the MPPT send can messages with a 10 bit voltage.
                       00033 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 21
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1237,7 +1237,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00084 ;Min Output Voltage, used for Precharge
                       00085 ;**********************************************************************
                       00086 ;#define MINUBATH       0x01    ; Min output voltage HByte 84 V in 196.97 mV  Units
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 22
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 22
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1296,7 +1296,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00063 ;    - _WRT_ENABLE_ON   : Flash Programm Memory Write Enable          -
                       00064 ;    - _CPD_OFF         : Data EE Memory Code Protection                 -
                       00065 ;    - _LVP_OFF         : Low Voltage ICSP Enable bit                    -
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 23
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1355,7 +1355,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00028 ;               INTERRUPT Vector
                       00029 ;
                       00030 ;               Global int bit, GIE, has been reset.
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 24
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1414,7 +1414,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 001B   086C           00078                 movf    IntSaveFSR,W    ; restore FSR
 001C   0084           00079                 movwf   FSR
 001D   0E6B           00080                 swapf   IntSaveSt,W     ; restore STATUS
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 25
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1473,7 +1473,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00044                                                 ; in the converter module
                       00045                 btfsc   PORTC,1
                       00046                   goto $-1
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 26
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1532,7 +1532,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0043   300F           00097 wait1s          movlw   0x0F
 0044   00FC           00098                 movwf   COUNTERC
 0045   305A           00099                 movlw   0x5A
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 27
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1591,7 +1591,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 006C   179F           00148                 bsf     ADCON0,7        ; Tad = 32 * Tosc = 1.6us
                       00149 
                       00150                 BANK1
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 28
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 28
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1650,7 +1650,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 008A   0823           00192                 movf    UI1L,W
 008B   00A5           00193                 movwf   UI2L
 008C   0821           00194                 movf    UI0L,W
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 29
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 29
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1709,7 +1709,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00236 
 00AA   0831           00237                 movf    UO2L,W
 00AB   00B3           00238                 movwf   UO3L
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 30
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 30
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1768,7 +1768,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00280 
 00CA   081E           00281                 movf    ADRESH,W
 00CB   00B6           00282                 movwf   II0H            ; store new high value
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 31
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 31
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1827,7 +1827,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00E7   00C2           00324                 movwf   TAMBH           ; store high value
                       00325                 BANK1
 00E8   1683               M         bsf     STATUS,5    ; Select page 1
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 32
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 32
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1886,7 +1886,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00375                 waitforedge
                           M                 
 00F2   1C87               M                 btfss   PORTC,1         ; Trigger on negative edge to eliminate
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 33
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 33
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1945,7 +1945,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00419                 
 010A   0829           00420                 movf    UIF0L,W
 010B   00F1           00421                 movwf   Temp0
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 34
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 34
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2004,7 +2004,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00472 
                       00473 ;**********************************************************************
                       00474 ;               Get a filtered value of (UIN)
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 35
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 35
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2063,7 +2063,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 014E   3C02               M         sublw   0x02
 014F   1C03               M         btfss   _C
 0150   2???               M         goto    SmallDelta
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 36
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 36
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2122,7 +2122,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00555 
 016F   072F           00556                 addwf   UO1L,W          ; Add it to former value
 0170   1803           00557                 btfsc   _C              ; If a carry occured...
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 37
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 37
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2181,7 +2181,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0194   0ABE           00608                    incf IIF0H,F
 0195   073D           00609                 addwf   II3L,W  
 0196   1803           00610                 btfsc   _C              ; If a carry occured...
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 38
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 38
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2240,7 +2240,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00006 ;                                                                     *
                       00007 ;    Filename:      2510.asm                                          *
                       00008 ;    Date:          20.11.00                                          *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 39
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 39
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2299,7 +2299,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00059                 movlw   Reg
                       00060                 call    Write2510
                       00061                 ENDM
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 40
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 40
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -2310,503 +2310,617 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00064 ;**********************************************************************
                       00065 ;               INIT MCP2510 CAN-Controller
                       00066 ;
-                      00067 ;               Physical layer configuration:
-                      00068 ;               - Fosc       = 20 MHz
-                      00069 ;               - BRP        = 10
-                      00070 ;               - Sync Seg   = 1 Tq
-                      00071 ;               - Prop Seg   = 2 Tq
-                      00072 ;               - Phase Seg1 = 3 Tq
-                      00073 ;               - Phase Seg2 = 3 Tq
-                      00074 ;               - SJW        = 1 Tq
-                      00075 ;               - Bus line is sampled once at the sample point
-                      00076 ;               - wake-up filter disable
-                      00077 ;**********************************************************************
-                      00078 
-01AA   2???           00079 Init2510        call    Reset2510
-                      00080 
-01AB   3003           00081                 movlw   B'00000011'     ; mask bit CLKOUT
-01AC   00EA           00082                 movwf   RegMask2510
-01AD   3002           00083                 movlw   B'00000010'     ; CLKOUT pin enable / clk:4
-01AE   00E8           00084                 movwf   RegData2510
-01AF   300F           00085                 movlw   CANCTRL         ; CAN control register of MCP2510
-01B0   2???           00086                 call    BitMod2510
-                      00087 
-                      00088                 SPI_WriteL CNF1,B'00000100'     ; config register 1 of MCP2510 (Bitiming)
-01B1   3004               M                 movlw   B'00000100'
-01B2   00E8               M                 movwf   RegData2510
-01B3   302A               M                 movlw   0x2A
-01B4   2???               M                 call    Write2510
-                      00089 
-                      00090                 SPI_WriteL CNF2,B'10001110'     ; config register 2 of MCP2510
-01B5   308E               M                 movlw   B'10001110'
-01B6   00E8               M                 movwf   RegData2510
-01B7   3029               M                 movlw   0x29
-01B8   2???               M                 call    Write2510
+                      00067 ;   125 kbps (NOT CURRENT SET UP!) Example setup used on page 38
+                      00068 ;       Physical layer configuration:
+                      00069 ;               - Fosc       = 20 MHz
+                      00070 ;                          Tosc = 50 ns
+                      00071 ;               - BRP        = 10  
+                      00072 ;                          TQ = (1/Fosc) * Brp = (1/20M) * (10) = 5* 10^6 = 500 ns
+                      00073 ;                          125k =1/(500 ns * 16)
+                      00074 ;                          We need 16 TQs to get a speed of 125k
+                      00075 ;               - Sync Seg   = 1 Tq
+                      00076 ;                                                       hardware seg
+                      00077 ;               - Prop Seg   = 2 Tq
+                      00078 ;                                                       really 7 Tq
+                      00079 ;                                                       For clarity, the value of prop seg is 6, however
+                             this is 7 TQs
+                      00080 ;               - Phase Seg1 = 3 Tq
+                      00081 ;                                                       really 2 Tq
+                      00082 ;                                                       For clarity, the value of seg1 seg is 1, however
+                             this is 2 TQs
+                      00083 ;               - Phase Seg2 = 3 Tq
+                      00084 ;                                                       really 6 tq?
+                      00085 ;                                                       the value is 5, but this is 6 TQs
+                      00086 ;               - SJW        = 1 Tq
+                      00087 ;                                                       really 0
+                      00088 ;               - Bus line is sampled once at the sample point
+                      00089 ;               - wake-up filter disable
+                      00090 ;      1+7+2+6 = 16 Qt, just what we needed ;)
                       00091 
-                      00092                 SPI_WriteL CNF3,B'00000101'     ; config register 3 of MCP2510
-01B9   3005               M                 movlw   B'00000101'
-01BA   00E8               M                 movwf   RegData2510
-01BB   3028               M                 movlw   0x28
-01BC   2???               M                 call    Write2510
-                      00093 
-                      00094                 SPI_WriteL CANINTE, B'00000000' ; int on RX0 full
-01BD   3000               M                 movlw   B'00000000'
-01BE   00E8               M                 movwf   RegData2510
-01BF   302B               M                 movlw   0x2B
-01C0   2???               M                 call    Write2510
-                      00095                                                 ; no int on TX0/1/2 empty  
-                      00096                                                 ; no int on Message error/Wakeup/EFLG error
+                      00092 ;        three config bytes used for 125kps are below;
+                      00093 ;               SPI_WriteL CNF1,B'00000100'     ; config register 1 of MCP2510 (Bitiming)
+                      00094 ;               SPI_WriteL CNF2,B'10001110'     ; config register 2 of MCP2510
+                      00095 ;               SPI_WriteL CNF3,B'00000101'     ; config register 3 of MCP2510
+                      00096 
                       00097 
-                      00098 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 41
+                      00098 ;**********************************************************************
+                      00099 ;
+                      00100 ;   500 kbps (page 39)
+                      00101 ;       Physical layer configuration:
+                      00102 ;               - Fosc       = 20 MHz
+                      00103 ;                          Tosc = 50 ns
+                      00104 ;               - BRP        = 4
+                      00105 ;                                               brp value will be 1
+                      00106 ;                                               tq = tosc * brp = 50 ns * 4 = 200 ns;
+                      00107 ;                                               500k = 1 /( 200 * x)
+                      00108 ;               - Sync Seg   = 1 Tq
+                      00109 ;                                               hardware seg
+                      00110 ;               - Prop Seg   = 2 Tq  value 1
+                      00111 ;               - Phase Seg1 = 2 Tq      value 1
+                      00112 ;               - Phase Seg2 = 5 Tq  value 4
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 41
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00099 ;***********************************************************************
-                      00100 ;   Configure TX
-                      00101 ;***********************************************************************
-                      00102                 SPI_WriteL TXB0CTRL,B'00000011' ; TX0 has Highest Message Priority
+                      00113 ;               - Bus line is sampled once at the sample point
+                      00114 ;               - wake-up filter disable
+                      00115 ;               1+2+2+5 = 10qt
+                      00116 
+                      00117 ;               SPI_WriteL CNF1,B'00000001'     ; config register 1 of MCP2510 (Bitiming)
+                      00118 ;                                                               swj =0 
+                      00119 ;                                                               brp = 1
+                      00120 ;               SPI_WriteL CNF2,B'10001001'     ;  config register 2 of MCP2510
+                      00121 ;                                                               BTLMODE = 1
+                      00122 ;                                                               SAM = 0
+                      00123 ;                                                               PHSEG1 = 1
+                      00124 ;                                                               PRSEG = 1
+                      00125 ;
+                      00126 ;               SPI_WriteL CNF3,B'00000100'     ; config register 3 of MCP2510
+                      00127 ;                                                               WAKFIL = 0
+                      00128 ;                                                               PHSEG2 = 4
+                      00129 
+                      00130 
+                      00131 
+                      00132 ;**********************************************************************
+                      00133 ;   1000 kbps (page 39)
+                      00134 ;       Physical layer configuration:
+                      00135 ;               - Fosc       = 20 MHz
+                      00136 ;                          Tosc = 50 ns
+                      00137 ;               - BRP        = 2
+                      00138 ;                                               brp value will be 0
+                      00139 ;                                               tq = tosc * brp = 50 ns * 2 = 100 ns;
+                      00140 ;                                               1000 kbps = 1 /( 100 * x)
+                      00141 ;               - Sync Seg   = 1 Tq
+                      00142 ;                                               hardware seg
+                      00143 ;               - Prop Seg   = 2 Tq  value 1
+                      00144 ;               - Phase Seg1 = 2 Tq      value 1
+                      00145 ;               - Phase Seg2 = 5 Tq  value 4
+                      00146 ;               - Bus line is sampled once at the sample point
+                      00147 ;               - wake-up filter disable
+                      00148 
+                      00149 ;               SPI_WriteL CNF1,B'00000001'     ; config register 1 of MCP2510 (Bitiming)
+                      00150 ;                                                               swj =0 
+                      00151 ;                                                               brp = 1
+                      00152 ;               SPI_WriteL CNF2,B'10001001'     ;  config register 2 of MCP2510
+                      00153 ;                                                               BTLMODE = 1
+                      00154 ;                                                               SAM = 0
+                      00155 ;                                                               PHSEG1 = 1
+                      00156 ;                                                               PRSEG = 1
+                      00157 
+                      00158 ;               SPI_WriteL CNF3,B'00000100'     ; config register 3 of MCP2510
+                      00159 ;                                                               WAKFIL = 0
+                      00160 ;                                                               PHSEG2 = 4
+                      00161 ;               1+2+2+5 = 10qt
+                      00162 
+                      00163 
+                      00164 ;**********************************************************************
+                      00165 
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 42
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00166 
+                      00167 
+                      00168 
+                      00169 
+01AA   2???           00170 Init2510        call    Reset2510
+                      00171 
+01AB   3003           00172                 movlw   B'00000011'     ; mask bit CLKOUT
+01AC   00EA           00173                 movwf   RegMask2510
+01AD   3002           00174                 movlw   B'00000010'     ; CLKOUT pin enable / clk:4
+01AE   00E8           00175                 movwf   RegData2510
+01AF   300F           00176                 movlw   CANCTRL         ; CAN control register of MCP2510
+01B0   2???           00177                 call    BitMod2510
+                      00178 
+                      00179                 
+                      00180                 
+                      00181                 SPI_WriteL CNF1,B'00000001'     ; config register 1 of MCP2510 (Bitiming)
+01B1   3001               M                 movlw   B'00000001'
+01B2   00E8               M                 movwf   RegData2510
+01B3   302A               M                 movlw   0x2A
+01B4   2???               M                 call    Write2510
+                      00182 ;                                                               swj =0 
+                      00183 ;                                                               brp = 1
+                      00184                 SPI_WriteL CNF2,B'10001001'     ;  config register 2 of MCP2510
+01B5   3089               M                 movlw   B'10001001'
+01B6   00E8               M                 movwf   RegData2510
+01B7   3029               M                 movlw   0x29
+01B8   2???               M                 call    Write2510
+                      00185 ;                                                               BTLMODE = 1
+                      00186 ;                                                               SAM = 0
+                      00187 ;                                                               PHSEG1 = 1
+                      00188 ;                                                               PRSEG = 1
+                      00189 
+                      00190                 SPI_WriteL CNF3,B'00000100'     ; config register 3 of MCP2510
+01B9   3004               M                 movlw   B'00000100'
+01BA   00E8               M                 movwf   RegData2510
+01BB   3028               M                 movlw   0x28
+01BC   2???               M                 call    Write2510
+                      00191 ;                                                               WAKFIL = 0
+                      00192 ;                                                               PHSEG2 = 4
+                      00193 
+                      00194                 SPI_WriteL CANINTE, B'00000000' ; int on RX0 full
+01BD   3000               M                 movlw   B'00000000'
+01BE   00E8               M                 movwf   RegData2510
+01BF   302B               M                 movlw   0x2B
+01C0   2???               M                 call    Write2510
+                      00195                                                 ; no int on TX0/1/2 empty  
+                      00196                                                 ; no int on Message error/Wakeup/EFLG error
+                      00197 
+                      00198 
+                      00199 ;***********************************************************************
+                      00200 ;   Configure TX
+                      00201 ;***********************************************************************
+                      00202                 SPI_WriteL TXB0CTRL,B'00000011' ; TX0 has Highest Message Priority
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 43
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
 01C1   3003               M                 movlw   B'00000011'
 01C2   00E8               M                 movwf   RegData2510
 01C3   3030               M                 movlw   0x30
 01C4   2???               M                 call    Write2510
-                      00103                 SPI_WriteL TXB1CTRL,B'00000010' ; TX1 has High Intermediate Message Priority
+                      00203                 SPI_WriteL TXB1CTRL,B'00000010' ; TX1 has High Intermediate Message Priority
 01C5   3002               M                 movlw   B'00000010'
 01C6   00E8               M                 movwf   RegData2510
 01C7   3040               M                 movlw   0x40
 01C8   2???               M                 call    Write2510
-                      00104                 SPI_WriteL TXB2CTRL,B'00000001' ; TX2 has Low Intermediate Message Priority
+                      00204                 SPI_WriteL TXB2CTRL,B'00000001' ; TX2 has Low Intermediate Message Priority
 01C9   3001               M                 movlw   B'00000001'
 01CA   00E8               M                 movwf   RegData2510
 01CB   3050               M                 movlw   0x50
 01CC   2???               M                 call    Write2510
-                      00105 
-                      00106                 SPI_WriteL TXRTSCTRL,B'00000000'        ; all TXRTS pins are only digital inputs
+                      00205 
+                      00206                 SPI_WriteL TXRTSCTRL,B'00000000'        ; all TXRTS pins are only digital inputs
 01CD   3000               M                 movlw   B'00000000'
 01CE   00E8               M                 movwf   RegData2510
 01CF   300D               M                 movlw   0x0D
 01D0   2???               M                 call    Write2510
-                      00107                 
-                      00108                 SPI_WriteD TXB0SIDH,IDTrackerTXH; Identifier High, Low is individual for each TX buffer 
+                      00207                 
+                      00208                 SPI_WriteD TXB0SIDH,IDTrackerTXH; Identifier High, Low is individual for each TX buffer 
                                     
 01D1   0850               M                 movf    IDTrackerTXH,W
 01D2   00E8               M                 movwf   RegData2510
 01D3   3031               M                 movlw   0x31
 01D4   2???               M                 call    Write2510
-                      00109                 SPI_WriteD TXB0SIDL,IDTrackerTXL; Identifier Low for TX0
+                      00209                 SPI_WriteD TXB0SIDL,IDTrackerTXL; Identifier Low for TX0
 01D5   0851               M                 movf    IDTrackerTXL,W
 01D6   00E8               M                 movwf   RegData2510
 01D7   3032               M                 movlw   0x32
 01D8   2???               M                 call    Write2510
-                      00110 
-                      00111                 SPI_WriteL TXB1SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
+                      00210 
+                      00211                 SPI_WriteL TXB1SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
                                             
 01D9   3000               M                 movlw   0x00
 01DA   00E8               M                 movwf   RegData2510
 01DB   3041               M                 movlw   0x41
 01DC   2???               M                 call    Write2510
-                      00112                 SPI_WriteL TXB1SIDL,0x00        ; Identifier Low for TX1, never used    
+                      00212                 SPI_WriteL TXB1SIDL,0x00        ; Identifier Low for TX1, never used    
 01DD   3000               M                 movlw   0x00
 01DE   00E8               M                 movwf   RegData2510
 01DF   3042               M                 movlw   0x42
 01E0   2???               M                 call    Write2510
-                      00113 
-                      00114                 SPI_WriteL TXB2SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
+                      00213 
+                      00214                 SPI_WriteL TXB2SIDH,0x00        ; Identifier High, Low is individual for each TX buffer 
                                             
 01E1   3000               M                 movlw   0x00
 01E2   00E8               M                 movwf   RegData2510
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 42
+01E3   3051               M                 movlw   0x51
+01E4   2???               M                 call    Write2510
+                      00215                 SPI_WriteL TXB2SIDL,0x00        ; Identifier Low for TX1, never used    
+01E5   3000               M                 movlw   0x00
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 44
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-01E3   3051               M                 movlw   0x51
-01E4   2???               M                 call    Write2510
-                      00115                 SPI_WriteL TXB2SIDL,0x00        ; Identifier Low for TX1, never used    
-01E5   3000               M                 movlw   0x00
 01E6   00E8               M                 movwf   RegData2510
 01E7   3052               M                 movlw   0x52
 01E8   2???               M                 call    Write2510
-                      00116                 
-                      00117                 SPI_WriteL TXB0DLC,0x08         ; Data Frame of TX0 has a lenght of 8 Bytes             
+                      00216                 
+                      00217                 SPI_WriteL TXB0DLC,0x08         ; Data Frame of TX0 has a lenght of 8 Bytes             
 01E9   3008               M                 movlw   0x08
 01EA   00E8               M                 movwf   RegData2510
 01EB   3035               M                 movlw   0x35
 01EC   2???               M                 call    Write2510
-                      00118                 SPI_WriteL TXB1DLC,0x06         ; Data Frame of TX1 has a lenght of 6 Bytes
+                      00218                 SPI_WriteL TXB1DLC,0x06         ; Data Frame of TX1 has a lenght of 6 Bytes
 01ED   3006               M                 movlw   0x06
 01EE   00E8               M                 movwf   RegData2510
 01EF   3045               M                 movlw   0x45
 01F0   2???               M                 call    Write2510
-                      00119                 
-                      00120 ;TX Buffers are not cleared here!       
-                      00121 ;***********************************************************************
-                      00122 ;   Configure RX
-                      00123 ;***********************************************************************
-                      00124                 SPI_WriteL RXB0CTRL,B'00000000' ; B0 filter enabled, receive standart and extended frame
+                      00219                 
+                      00220 ;TX Buffers are not cleared here!       
+                      00221 ;***********************************************************************
+                      00222 ;   Configure RX
+                      00223 ;***********************************************************************
+                      00224                 SPI_WriteL RXB0CTRL,B'00000000' ; B0 filter enabled, receive standart and extended frame
                             s
 01F1   3000               M                 movlw   B'00000000'
 01F2   00E8               M                 movwf   RegData2510
 01F3   3060               M                 movlw   0x60
 01F4   2???               M                 call    Write2510
-                      00125                 SPI_WriteL RXB1CTRL,B'00000000' ; B1 filter enabled
+                      00225                 SPI_WriteL RXB1CTRL,B'00000000' ; B1 filter enabled
 01F5   3000               M                 movlw   B'00000000'
 01F6   00E8               M                 movwf   RegData2510
 01F7   3070               M                 movlw   0x70
 01F8   2???               M                 call    Write2510
-                      00126 
-                      00127                 SPI_WriteL BFPCTRL,B'00000000'  ; disable RX1BF/RX0BF pin
+                      00226 
+                      00227                 SPI_WriteL BFPCTRL,B'00000000'  ; disable RX1BF/RX0BF pin
 01F9   3000               M                 movlw   B'00000000'
 01FA   00E8               M                 movwf   RegData2510
 01FB   300C               M                 movlw   0x0C
 01FC   2???               M                 call    Write2510
-                      00128                 
-                      00129 ;***********************************************************************
-                      00130 ;   RX Filter and Masks
-                      00131 ;***********************************************************************
-                      00132 
-                      00133                 SPI_WriteL RXM0SIDH,B'11111111' ; acceptance filter mask 0 high
+                      00228                 
+                      00229 ;***********************************************************************
+                      00230 ;   RX Filter and Masks
+                      00231 ;***********************************************************************
+                      00232 
+                      00233                 SPI_WriteL RXM0SIDH,B'11111111' ; acceptance filter mask 0 high
 01FD   30FF               M                 movlw   B'11111111'
 01FE   00E8               M                 movwf   RegData2510
 01FF   3020               M                 movlw   0x20
 0200   2???               M                 call    Write2510
-                      00134                 SPI_WriteL RXM0SIDL,B'11100000' ; acceptance filter mask 0 low
+                      00234                 SPI_WriteL RXM0SIDL,B'11100000' ; acceptance filter mask 0 low
 0201   30E0               M                 movlw   B'11100000'
 0202   00E8               M                 movwf   RegData2510
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 43
+0203   3021               M                 movlw   0x21
+0204   2???               M                 call    Write2510
+                      00235                                 
+                      00236                 SPI_WriteD RXF1SIDH,IDTrackerRXH; acceptance filter 1 high
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 45
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0203   3021               M                 movlw   0x21
-0204   2???               M                 call    Write2510
-                      00135                                 
-                      00136                 SPI_WriteD RXF1SIDH,IDTrackerRXH; acceptance filter 1 high
 0205   0852               M                 movf    IDTrackerRXH,W
 0206   00E8               M                 movwf   RegData2510
 0207   3004               M                 movlw   0x04
 0208   2???               M                 call    Write2510
-                      00137                 SPI_WriteD RXF1SIDL,IDTrackerRXL; acceptance filter 1 low
+                      00237                 SPI_WriteD RXF1SIDL,IDTrackerRXL; acceptance filter 1 low
 0209   0853               M                 movf    IDTrackerRXL,W
 020A   00E8               M                 movwf   RegData2510
 020B   3005               M                 movlw   0x05
 020C   2???               M                 call    Write2510
-                      00138                 
-                      00139                 SPI_WriteD RXF0SIDH,IDTrackerRXH; acceptance filter 0 high
+                      00238                 
+                      00239                 SPI_WriteD RXF0SIDH,IDTrackerRXH; acceptance filter 0 high
 020D   0852               M                 movf    IDTrackerRXH,W
 020E   00E8               M                 movwf   RegData2510
 020F   3000               M                 movlw   0x00
 0210   2???               M                 call    Write2510
-                      00140                 SPI_WriteD RXF0SIDL,IDTrackerRXL; acceptance filter 0 low
+                      00240                 SPI_WriteD RXF0SIDL,IDTrackerRXL; acceptance filter 0 low
 0211   0853               M                 movf    IDTrackerRXL,W
 0212   00E8               M                 movwf   RegData2510
 0213   3001               M                 movlw   0x01
 0214   2???               M                 call    Write2510
-                      00141                 
-                      00142                 SPI_WriteL RXM1SIDH,B'11111111' ; acceptance filter mask 1 high
+                      00241                 
+                      00242                 SPI_WriteL RXM1SIDH,B'11111111' ; acceptance filter mask 1 high
 0215   30FF               M                 movlw   B'11111111'
 0216   00E8               M                 movwf   RegData2510
 0217   3024               M                 movlw   0x24
 0218   2???               M                 call    Write2510
-                      00143                 SPI_WriteL RXM1SIDL,B'11100000' ; acceptance filter mask 1 low
+                      00243                 SPI_WriteL RXM1SIDL,B'11100000' ; acceptance filter mask 1 low
 0219   30E0               M                 movlw   B'11100000'
 021A   00E8               M                 movwf   RegData2510
 021B   3025               M                 movlw   0x25
 021C   2???               M                 call    Write2510
-                      00144 
-                      00145                 SPI_WriteL RXF2SIDH,B'00000000' ; acceptance filter 2 high
+                      00244 
+                      00245                 SPI_WriteL RXF2SIDH,B'00000000' ; acceptance filter 2 high
 021D   3000               M                 movlw   B'00000000'
 021E   00E8               M                 movwf   RegData2510
 021F   3008               M                 movlw   0x08
 0220   2???               M                 call    Write2510
-                      00146                 SPI_WriteL RXF2SIDL,B'00000000' ; acceptance filter 2 low
+                      00246                 SPI_WriteL RXF2SIDL,B'00000000' ; acceptance filter 2 low
 0221   3000               M                 movlw   B'00000000'
 0222   00E8               M                 movwf   RegData2510
 0223   3009               M                 movlw   0x09
 0224   2???               M                 call    Write2510
-                      00147 
-                      00148                 SPI_WriteL RXF3SIDH,B'00000000' ; acceptance filter 3 high
+                      00247 
+                      00248                 SPI_WriteL RXF3SIDH,B'00000000' ; acceptance filter 3 high
 0225   3000               M                 movlw   B'00000000'
 0226   00E8               M                 movwf   RegData2510
 0227   3010               M                 movlw   0x10
 0228   2???               M                 call    Write2510
-                      00149                 SPI_WriteL RXF3SIDL,B'00000000' ; acceptance filter 3 low
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 44
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
+                      00249                 SPI_WriteL RXF3SIDL,B'00000000' ; acceptance filter 3 low
 0229   3000               M                 movlw   B'00000000'
 022A   00E8               M                 movwf   RegData2510
 022B   3011               M                 movlw   0x11
 022C   2???               M                 call    Write2510
-                      00150 
-                      00151                 SPI_WriteL RXF4SIDH,B'00000000' ; acceptance filter 4 high
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 46
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00250 
+                      00251                 SPI_WriteL RXF4SIDH,B'00000000' ; acceptance filter 4 high
 022D   3000               M                 movlw   B'00000000'
 022E   00E8               M                 movwf   RegData2510
 022F   3014               M                 movlw   0x14
 0230   2???               M                 call    Write2510
-                      00152                 SPI_WriteL RXF4SIDL,B'00000000' ; acceptance filter 4 low
+                      00252                 SPI_WriteL RXF4SIDL,B'00000000' ; acceptance filter 4 low
 0231   3000               M                 movlw   B'00000000'
 0232   00E8               M                 movwf   RegData2510
 0233   3015               M                 movlw   0x15
 0234   2???               M                 call    Write2510
-                      00153 
-                      00154                 SPI_WriteL RXF5SIDH,B'00000000' ; acceptance filter 5 high
+                      00253 
+                      00254                 SPI_WriteL RXF5SIDH,B'00000000' ; acceptance filter 5 high
 0235   3000               M                 movlw   B'00000000'
 0236   00E8               M                 movwf   RegData2510
 0237   3018               M                 movlw   0x18
 0238   2???               M                 call    Write2510
-                      00155                 SPI_WriteL RXF5SIDL,B'00000000' ; acceptance filter 5 low
+                      00255                 SPI_WriteL RXF5SIDL,B'00000000' ; acceptance filter 5 low
 0239   3000               M                 movlw   B'00000000'
 023A   00E8               M                 movwf   RegData2510
 023B   3019               M                 movlw   0x19
 023C   2???               M                 call    Write2510
-                      00156 
-                      00157 ;***********************************************************************
-                      00158 ;   Errors and Interupts
-                      00159 ;***********************************************************************
-                      00160 
-                      00161                 SPI_WriteL      CANINTE,B'00000001'     ; enable RX0 Buffer Interupt
+                      00256 
+                      00257 ;***********************************************************************
+                      00258 ;   Errors and Interupts
+                      00259 ;***********************************************************************
+                      00260 
+                      00261                 SPI_WriteL      CANINTE,B'00000001'     ; enable RX0 Buffer Interupt
 023D   3001               M                 movlw   B'00000001'
 023E   00E8               M                 movwf   RegData2510
 023F   302B               M                 movlw   0x2B
 0240   2???               M                 call    Write2510
-                      00162                                 
-0241   2???           00163                 call    NormalMode2510
-                      00164 
-0242   0008           00165                 RETURN
-                      00166 
-                      00167 
-                      00168 ;**********************************************************************
-                      00169 ;               RESET Internal registers to default state
-                      00170 ;
-                      00171 ;               NOTE: - automatically put MCP2510 in configuration mode
-                      00172 ;                     data format under SPI bus
-                      00173 ;                     SI pin -> instruction
-                      00174 ;                     SO pin ->    ---
-                      00175 ;**********************************************************************
-                      00176 
-0243   2???           00177 Reset2510       call    InitSPIBuf
-                      00178 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 45
+                      00262                                 
+0241   2???           00263                 call    NormalMode2510
+                      00264 
+0242   0008           00265                 RETURN
+                      00266 
+                      00267 
+                      00268 ;**********************************************************************
+                      00269 ;               RESET Internal registers to default state
+                      00270 ;
+                      00271 ;               NOTE: - automatically put MCP2510 in configuration mode
+                      00272 ;                     data format under SPI bus
+                      00273 ;                     SI pin -> instruction
+                      00274 ;                     SO pin ->    ---
+                      00275 ;**********************************************************************
+                      00276 
+0243   2???           00277 Reset2510       call    InitSPIBuf
+                      00278 
+0244   30C0           00279                 movlw   RESET2510
+0245   2???           00280                 call    LoadSPIByte     ; reset MCP2510
+                      00281 
+0246   2???           00282                 call    ExchangeSPI     ; start SPI transaction
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 47
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0244   30C0           00179                 movlw   RESET2510
-0245   2???           00180                 call    LoadSPIByte     ; reset MCP2510
-                      00181 
-0246   2???           00182                 call    ExchangeSPI     ; start SPI transaction
-0247   2???           00183                 call    WaitSPIExchange ; wait SPI transaction complete
-                      00184 
-0248   3025           00185                 movlw   0x25            ; wait 37us
-0249   2???           00186                 call    wait
-                      00187 
-024A   0008           00188                 RETURN
-                      00189 
-                      00190 
-                      00191 ;**********************************************************************
-                      00192 ;               READ data from register beginning at selected address
-                      00193 ;
-                      00194 ;               IN: w                   address of the register to be readed
-                      00195 ;                   RegAdr2510          temp to hold address
-                      00196 ;
-                      00197 ;               NOTE: data format under SPI bus
-                      00198 ;                     SI pin -> instruction / address / ---
-                      00199 ;                     SO pin ->    ---      /   ---   / data
-                      00200 ;**********************************************************************
-024B   00E9           00201 Read2510        movwf   RegAdr2510      ; hold address
-                      00202 
-024C   2???           00203                 call    InitSPIBuf      ; init SPI buffer
-                      00204 
-024D   3003           00205                 movlw   READ2510        ; MCP2510 instruction
-024E   2???           00206                 call    LoadSPIByte
-                      00207 
-024F   0869           00208                 movf    RegAdr2510,W    ; MCP2510 address
-0250   2???           00209                 call    LoadSPIByte
-                      00210 
-0251   3001           00211                 movlw   1               ; Expect 1 byte answer
-0252   2???           00212                 call    LoadSPIZeros
-                      00213 
-0253   2???           00214                 call    ExchangeSPI     ; send via SPI bus
-0254   2???           00215                 call    WaitSPIExchange ; wait transmission to be complete
-                      00216 
-0255   0858           00217                 movf    SPIBufBase+2,W  ; store answer in SPI buffer
-                      00218 
-0256   0008           00219                 RETURN
-                      00220 
-                      00221 
-                      00222 ;**********************************************************************
-                      00223 ;               WRITE data to register beginning at selected address
-                      00224 ;
-                      00225 ;               IN: w                   address of the register to be readed
-                      00226 ;                   RegAdr2510          temp to hold address
-                      00227 ;                   RegData2510         data sent/receive register
-                      00228 ;
-                      00229 ;               NOTE: data format under SPI bus
-                      00230 ;                     SI pin -> instruction / address / data
-                      00231 ;                     SO pin ->    ---      /   ---   / ---
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 46
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
-                      00232 ;**********************************************************************
-0257   00E9           00233 Write2510       movwf   RegAdr2510      ; hold address
-                      00234 
-0258   2???           00235                 call    InitSPIBuf      ; init SPI buffer
-                      00236 
-0259   3002           00237                 movlw   WRITE2510       ; MCP2510 instruction
-025A   2???           00238                 call    LoadSPIByte
-                      00239 
-025B   0869           00240                 movf    RegAdr2510,W    ; MCP2510 address
-025C   2???           00241                 call    LoadSPIByte
-                      00242 
-025D   0868           00243                 movf    RegData2510,W   ; Expect 1 byte answer
-025E   2???           00244                 call    LoadSPIByte
-                      00245 
-025F   2???           00246                 call    ExchangeSPI     ; send via SPI bus
-0260   2???           00247                 call    WaitSPIExchange ; wait transmission to be complete
-                      00248 
-0261   0008           00249                 RETURN
-                      00250 
-                      00251 
-                      00252 ;**********************************************************************
-                      00253 ;               RTS Send the request to send instruction to the CAN-Bus
-                      00254 ;               Controller with value in w (ORed)
-                      00255 ;
-                      00256 ;               - Sets TXBnCTRL
-                      00257 ;               - TXREQ bit for one or more transmit buffers
-                      00258 ;
-                      00259 ;               IN: w                   address of the register to be readed
-                      00260 ;                   RegAdr2510          temp to hold address
-                      00261 ;                   RegData2510         data sent/receive register
-                      00262 ;
-                      00263 ;               NOTE: data format under SPI bus
-                      00264 ;                     SI pin -> instruction (10000nnn)
-                      00265 ;                     SO pin ->    ---
-                      00266 ;**********************************************************************
-0262   00E8           00267 Rts2510         movwf   RegData2510     ; hold address
-                      00268 
-0263   2???           00269                 call    InitSPIBuf      ; init SPI buffer
-                      00270 
-0264   3080           00271                 movlw   RTS2510         ; MCP2510 instruction
-0265   0468           00272                 iorwf   RegData2510,W   ; get data and OR it with RTS
-0266   2???           00273                 call    LoadSPIByte
-                      00274 
-0267   2???           00275                 call    ExchangeSPI     ; send via SPI bus
-0268   2???           00276                 call    WaitSPIExchange ; wait transmission to be complete
-                      00277 
-0269   0008           00278                 RETURN
-                      00279 
-                      00280 
-                      00281 ;**********************************************************************
-                      00282 ;               GET STATUS bits for transmit/receive functions 
-                      00283 ;
-                      00284 ;               NOTE: data format under SPI bus
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 47
-
-
-LOC  OBJECT CODE     LINE SOURCE TEXT
-  VALUE
-
-                      00285 ;                     SI pin -> instruction /  ---   /     ---
-                      00286 ;                     SO pin ->    ---      /  data  / repeat data
-                      00287 ;**********************************************************************
-026A   2???           00288 Status2510      call    InitSPIBuf      ; init SPI buffer
+0247   2???           00283                 call    WaitSPIExchange ; wait SPI transaction complete
+                      00284 
+0248   3025           00285                 movlw   0x25            ; wait 37us
+0249   2???           00286                 call    wait
+                      00287 
+024A   0008           00288                 RETURN
                       00289 
-026B   30A0           00290                 movlw   STATUS2510      ; MCP2510 instruction
-026C   2???           00291                 call    LoadSPIByte
-                      00292 
-026D   3001           00293                 movlw   1               ; Expect 1 byte answer
-026E   2???           00294                 call    LoadSPIZeros
-                      00295 
-026F   2???           00296                 call    ExchangeSPI     ; send via SPI bus
-0270   2???           00297                 call    WaitSPIExchange ; wait transmission to be complete
-                      00298 
-0271   0008           00299                 RETURN
-                      00300 
-                      00301 
-                      00302 ;**********************************************************************
-                      00303 ;               MODIFY BIT IN REGITERS OF MCP2510 CAN-Controller 
-                      00304 ;
-                      00305 ;               IN: reg W               address of the register to be modified
-                      00306 ;                   RegAdr2510          temp to hold address
-                      00307 ;                   RegMask2510         mask register
-                      00308 ;                   RegData2510         data sent/receive register
-                      00309 ;
-                      00310 ;               NOTE: data format under SPI bus
-                      00311 ;                     SI pin -> instruction / address / mask / data
-                      00312 ;                     SO pin -> ---
-                      00313 ;**********************************************************************
-0272   00E9           00314 BitMod2510      movwf   RegAdr2510      ; hold address
-                      00315 
-0273   2???           00316                 call    InitSPIBuf      ; init SPI buffer
-                      00317 
-0274   3005           00318                 movlw   BITMODIFY2510   ; MCP2510 instruction
-0275   2???           00319                 call    LoadSPIByte
+                      00290 
+                      00291 ;**********************************************************************
+                      00292 ;               READ data from register beginning at selected address
+                      00293 ;
+                      00294 ;               IN: w                   address of the register to be readed
+                      00295 ;                   RegAdr2510          temp to hold address
+                      00296 ;
+                      00297 ;               NOTE: data format under SPI bus
+                      00298 ;                     SI pin -> instruction / address / ---
+                      00299 ;                     SO pin ->    ---      /   ---   / data
+                      00300 ;**********************************************************************
+024B   00E9           00301 Read2510        movwf   RegAdr2510      ; hold address
+                      00302 
+024C   2???           00303                 call    InitSPIBuf      ; init SPI buffer
+                      00304 
+024D   3003           00305                 movlw   READ2510        ; MCP2510 instruction
+024E   2???           00306                 call    LoadSPIByte
+                      00307 
+024F   0869           00308                 movf    RegAdr2510,W    ; MCP2510 address
+0250   2???           00309                 call    LoadSPIByte
+                      00310 
+0251   3001           00311                 movlw   1               ; Expect 1 byte answer
+0252   2???           00312                 call    LoadSPIZeros
+                      00313 
+0253   2???           00314                 call    ExchangeSPI     ; send via SPI bus
+0254   2???           00315                 call    WaitSPIExchange ; wait transmission to be complete
+                      00316 
+0255   0858           00317                 movf    SPIBufBase+2,W  ; store answer in SPI buffer
+                      00318 
+0256   0008           00319                 RETURN
                       00320 
-0276   0869           00321                 movf    RegAdr2510,W    ; MCP2510 address
-0277   2???           00322                 call    LoadSPIByte
-                      00323 
-0278   086A           00324                 movf    RegMask2510,W   ; MCP2510 mask
-0279   2???           00325                 call    LoadSPIByte
-                      00326 
-027A   0868           00327                 movf    RegData2510,W   ; MCP2510 data
-027B   2???           00328                 call    LoadSPIByte
-                      00329 
-027C   2???           00330                 call    ExchangeSPI     ; send via SPI bus
-027D   2???           00331                 call    WaitSPIExchange ; wait transmission to be complete
-                      00332 
-027E   0008           00333                 RETURN
+                      00321 
+                      00322 ;**********************************************************************
+                      00323 ;               WRITE data to register beginning at selected address
+                      00324 ;
+                      00325 ;               IN: w                   address of the register to be readed
+                      00326 ;                   RegAdr2510          temp to hold address
+                      00327 ;                   RegData2510         data sent/receive register
+                      00328 ;
+                      00329 ;               NOTE: data format under SPI bus
+                      00330 ;                     SI pin -> instruction / address / data
+                      00331 ;                     SO pin ->    ---      /   ---   / ---
+                      00332 ;**********************************************************************
+0257   00E9           00333 Write2510       movwf   RegAdr2510      ; hold address
                       00334 
-                      00335 
-                      00336 ;**********************************************************************
-                      00337 ;               SET NORMAL MODE OF MCP2510 CAN-Controller 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 48
+0258   2???           00335                 call    InitSPIBuf      ; init SPI buffer
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 48
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00338 ;
-                      00339 ;               NOTE: - Set normal operation mode
-                      00340 ;                     - CLKOUT pin disable
-                      00341 ;**********************************************************************
-027F   30E0           00342 NormalMode2510  movlw   B'11100000'     ; mask bits
-0280   00EA           00343                 movwf   RegMask2510
-0281   3000           00344                 movlw   B'00000000'     ; Set Normal Mode
-0282   00E8           00345                 movwf   RegData2510
-0283   300F           00346                 movlw   CANCTRL         ; CAN control register of MCP2510
-0284   2???           00347                 call    BitMod2510
+                      00336 
+0259   3002           00337                 movlw   WRITE2510       ; MCP2510 instruction
+025A   2???           00338                 call    LoadSPIByte
+                      00339 
+025B   0869           00340                 movf    RegAdr2510,W    ; MCP2510 address
+025C   2???           00341                 call    LoadSPIByte
+                      00342 
+025D   0868           00343                 movf    RegData2510,W   ; Expect 1 byte answer
+025E   2???           00344                 call    LoadSPIByte
+                      00345 
+025F   2???           00346                 call    ExchangeSPI     ; send via SPI bus
+0260   2???           00347                 call    WaitSPIExchange ; wait transmission to be complete
                       00348 
-0285   3000           00349                 movlw   0x00    
-0286   00EF           00350                 movwf   NormalModeCounter
-                      00351                 
-0287   0AEF           00352 WaitNormal      incf    NormalModeCounter,f
-0288   300E           00353                 movlw   CANSTAT
-0289   2???           00354                 call    Read2510
-028A   39E0           00355                 andlw   0xE0
-028B   1903           00356                 btfsc   _Z
-028C   2???           00357                   goto  Ret
-                      00358                 jmpFneL NormalModeCounter,0xFF,WaitNormal               
+0261   0008           00349                 RETURN
+                      00350 
+                      00351 
+                      00352 ;**********************************************************************
+                      00353 ;               RTS Send the request to send instruction to the CAN-Bus
+                      00354 ;               Controller with value in w (ORed)
+                      00355 ;
+                      00356 ;               - Sets TXBnCTRL
+                      00357 ;               - TXREQ bit for one or more transmit buffers
+                      00358 ;
+                      00359 ;               IN: w                   address of the register to be readed
+                      00360 ;                   RegAdr2510          temp to hold address
+                      00361 ;                   RegData2510         data sent/receive register
+                      00362 ;
+                      00363 ;               NOTE: data format under SPI bus
+                      00364 ;                     SI pin -> instruction (10000nnn)
+                      00365 ;                     SO pin ->    ---
+                      00366 ;**********************************************************************
+0262   00E8           00367 Rts2510         movwf   RegData2510     ; hold address
+                      00368 
+0263   2???           00369                 call    InitSPIBuf      ; init SPI buffer
+                      00370 
+0264   3080           00371                 movlw   RTS2510         ; MCP2510 instruction
+0265   0468           00372                 iorwf   RegData2510,W   ; get data and OR it with RTS
+0266   2???           00373                 call    LoadSPIByte
+                      00374 
+0267   2???           00375                 call    ExchangeSPI     ; send via SPI bus
+0268   2???           00376                 call    WaitSPIExchange ; wait transmission to be complete
+                      00377 
+0269   0008           00378                 RETURN
+                      00379 
+                      00380 
+                      00381 ;**********************************************************************
+                      00382 ;               GET STATUS bits for transmit/receive functions 
+                      00383 ;
+                      00384 ;               NOTE: data format under SPI bus
+                      00385 ;                     SI pin -> instruction /  ---   /     ---
+                      00386 ;                     SO pin ->    ---      /  data  / repeat data
+                      00387 ;**********************************************************************
+026A   2???           00388 Status2510      call    InitSPIBuf      ; init SPI buffer
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 49
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00389 
+026B   30A0           00390                 movlw   STATUS2510      ; MCP2510 instruction
+026C   2???           00391                 call    LoadSPIByte
+                      00392 
+026D   3001           00393                 movlw   1               ; Expect 1 byte answer
+026E   2???           00394                 call    LoadSPIZeros
+                      00395 
+026F   2???           00396                 call    ExchangeSPI     ; send via SPI bus
+0270   2???           00397                 call    WaitSPIExchange ; wait transmission to be complete
+                      00398 
+0271   0008           00399                 RETURN
+                      00400 
+                      00401 
+                      00402 ;**********************************************************************
+                      00403 ;               MODIFY BIT IN REGITERS OF MCP2510 CAN-Controller 
+                      00404 ;
+                      00405 ;               IN: reg W               address of the register to be modified
+                      00406 ;                   RegAdr2510          temp to hold address
+                      00407 ;                   RegMask2510         mask register
+                      00408 ;                   RegData2510         data sent/receive register
+                      00409 ;
+                      00410 ;               NOTE: data format under SPI bus
+                      00411 ;                     SI pin -> instruction / address / mask / data
+                      00412 ;                     SO pin -> ---
+                      00413 ;**********************************************************************
+0272   00E9           00414 BitMod2510      movwf   RegAdr2510      ; hold address
+                      00415 
+0273   2???           00416                 call    InitSPIBuf      ; init SPI buffer
+                      00417 
+0274   3005           00418                 movlw   BITMODIFY2510   ; MCP2510 instruction
+0275   2???           00419                 call    LoadSPIByte
+                      00420 
+0276   0869           00421                 movf    RegAdr2510,W    ; MCP2510 address
+0277   2???           00422                 call    LoadSPIByte
+                      00423 
+0278   086A           00424                 movf    RegMask2510,W   ; MCP2510 mask
+0279   2???           00425                 call    LoadSPIByte
+                      00426 
+027A   0868           00427                 movf    RegData2510,W   ; MCP2510 data
+027B   2???           00428                 call    LoadSPIByte
+                      00429 
+027C   2???           00430                 call    ExchangeSPI     ; send via SPI bus
+027D   2???           00431                 call    WaitSPIExchange ; wait transmission to be complete
+                      00432 
+027E   0008           00433                 RETURN
+                      00434 
+                      00435 
+                      00436 ;**********************************************************************
+                      00437 ;               SET NORMAL MODE OF MCP2510 CAN-Controller 
+                      00438 ;
+                      00439 ;               NOTE: - Set normal operation mode
+                      00440 ;                     - CLKOUT pin disable
+                      00441 ;**********************************************************************
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 50
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+027F   30E0           00442 NormalMode2510  movlw   B'11100000'     ; mask bits
+0280   00EA           00443                 movwf   RegMask2510
+0281   3000           00444                 movlw   B'00000000'     ; Set Normal Mode
+0282   00E8           00445                 movwf   RegData2510
+0283   300F           00446                 movlw   CANCTRL         ; CAN control register of MCP2510
+0284   2???           00447                 call    BitMod2510
+                      00448 
+0285   3000           00449                 movlw   0x00    
+0286   00EF           00450                 movwf   NormalModeCounter
+                      00451                 
+0287   0AEF           00452 WaitNormal      incf    NormalModeCounter,f
+0288   300E           00453                 movlw   CANSTAT
+0289   2???           00454                 call    Read2510
+028A   39E0           00455                 andlw   0xE0
+028B   1903           00456                 btfsc   _Z
+028C   2???           00457                   goto  Ret
+                      00458                 jmpFneL NormalModeCounter,0xFF,WaitNormal               
 028D   086F               M         movf    NormalModeCounter,W
 028E   3CFF               M           sublw   0xFF
 028F   1D03               M           btfss   _Z
 0290   2???               M           goto    WaitNormal
-                      00359 
-0291   0000           00360 Ret             nop
-0292   0008           00361                 RETURN
-                      00362 
-                      00363 
+                      00459 
+0291   0000           00460 Ret             nop
+0292   0008           00461                 RETURN
+                      00462 
+                      00463 
                       00092 #include        "init.asm"                      ; init routine
                       00001 ;**********************************************************************
                       00002 ;   P R O G R A M M     MPPTnG                                            *
@@ -2830,16 +2944,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00020 ;    Notes:                                                           *
                       00021 ;    - Main program : mpptng.asm                                      *
                       00022 ;                                                                     *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 49
+                      00023 ;**********************************************************************
+                      00024 ;                                                                     *
+                      00025 ;    Ports config:                                                    *
+                      00026 ;                                                                     *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 51
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00023 ;**********************************************************************
-                      00024 ;                                                                     *
-                      00025 ;    Ports config:                                                    *
-                      00026 ;                                                                     *
                       00027 ;    port ra0   an0     i       Analog Umes_in                                * 
                       00028 ;    port ra1   an1     i       Analog Umes_out                               *
                       00029 ;    port ra2   an2     i       Analog Imes_in                                *
@@ -2889,16 +3003,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0294   018C           00072                         clrf    PIE1_P                  ; clear peripheral interrupts
                       00073        
 0295   308D           00074                         movlw   B'10001101'     ; pullup off / falling edge for RB0/INT pin
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 50
+                      00075                                                                         ; Watchdog Prescaler is 101 = 1:
+                            32 = 0.625s
+                      00076                                                                         ; Watchdog Timer must be enabled
+                             on download "2007h"
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 52
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00075                                                                         ; Watchdog Prescaler is 101 = 1:
-                            32 = 0.625s
-                      00076                                                                         ; Watchdog Timer must be enabled
-                             on download "2007h"
 0296   0081           00077                         movwf   OPTION_REG_P    
                       00078                          
                       00079 
@@ -2948,16 +3062,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00120 
 02B5   30C8           00121                         movlw   B'11001000'     ; enable peripheral interrupt, disables RB0/INT
                       00122                                                                 ; enable port B change interrupt
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 51
+02B6   008B           00123                         movwf   INTCON
+                      00124                                         
+02B7   0008           00125                         RETURN
+                      00126 
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 53
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-02B6   008B           00123                         movwf   INTCON
-                      00124                                         
-02B7   0008           00125                         RETURN
-                      00126 
                       00093 
                       00094 #include        "can.asm"                       ; can network routine
                       00001 ;**********************************************************************
@@ -3007,16 +3121,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 02C1   0AD2           00045                    incf    IDTrackerRXH,F       
                       00046 
 02C2   0808           00047                 movf    PORTD,W         ; read switches
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 52
+02C3   3907           00048                 andlw   B'00000111'
+02C4   1003           00049                 bcf     _C
+02C5   00D1           00050                 movwf   IDTrackerTXL
+02C6   0DD1           00051                 rlf     IDTrackerTXL,F  ; shift left four positions
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 54
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-02C3   3907           00048                 andlw   B'00000111'
-02C4   1003           00049                 bcf     _C
-02C5   00D1           00050                 movwf   IDTrackerTXL
-02C6   0DD1           00051                 rlf     IDTrackerTXL,F  ; shift left four positions
 02C7   0DD1           00052                 rlf     IDTrackerTXL,F
 02C8   0DD1           00053                 rlf     IDTrackerTXL,F
 02C9   0DD1           00054                 rlf     IDTrackerTXL,F
@@ -3066,16 +3180,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00098 UpdateTX0       SPI_WriteL TXB0DLC,0x07         ; 7 bytes to send
 02D5   3007               M                 movlw   0x07
 02D6   00E8               M                 movwf   RegData2510
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 53
+02D7   3035               M                 movlw   0x35
+02D8   2???               M                 call    Write2510
+                      00099                 
+02D9   086E           00100                 movf    GenFlags,W              ; add GenFlags to UinH Byte
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 55
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-02D7   3035               M                 movlw   0x35
-02D8   2???               M                 call    Write2510
-                      00099                 
-02D9   086E           00100                 movf    GenFlags,W              ; add GenFlags to UinH Byte
 02DA   390F           00101                 andlw   B'00001111'
 02DB   00F1           00102                 movwf   Temp0
 02DC   1003           00103                 bcf     _C
@@ -3125,16 +3239,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0301   00C3           00123                 movwf   TAMBL
                       00124                 SPI_WriteD TXB0D6,TAMBL 
 0302   0843               M                 movf    TAMBL,W
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 54
+0303   00E8               M                 movwf   RegData2510
+0304   303C               M                 movlw   0x3C
+0305   2???               M                 call    Write2510
+                      00125 
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 56
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0303   00E8               M                 movwf   RegData2510
-0304   303C               M                 movlw   0x3C
-0305   2???               M                 call    Write2510
-                      00125 
                       00126 ;               call    GetTCooler
                       00127 ;               call    ConvTempCooler
                       00128 ;               movwf   TCL
@@ -3184,16 +3298,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 031F   2???           00172                 call    Read2510
 0320   00F6           00173                 movwf   Temp4
 0321   1C76           00174                 btfss   Temp4,0
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 55
+0322   0008           00175                         RETURN          
+                      00176 
+0323   2???           00177                 call    GetFilteredIin                          ; get actual values
+0324   2???           00178                 call    GetFilteredUout
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 57
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0322   0008           00175                         RETURN          
-                      00176 
-0323   2???           00177                 call    GetFilteredIin                          ; get actual values
-0324   2???           00178                 call    GetFilteredUout
 0325   2???           00179                 call    GetFilteredUin
                       00180 ;               call    GetTCooler
 0326   2???           00181                 call    GetTamb
@@ -3243,16 +3357,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00022 ;                                                                     *
                       00023 ;**********************************************************************
                       00024 ;                                                                     *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 56
+                      00025 ;    Config:                                                          *
+                      00026 ;                                                                     *
+                      00027 ;    PWM1 -> CCP1 (pin 36) -> Aux pulse (Sa')                         *
+                      00028 ;            Duty cycle : 016h (0000010110b)                          *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 58
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00025 ;    Config:                                                          *
-                      00026 ;                                                                     *
-                      00027 ;    PWM1 -> CCP1 (pin 36) -> Aux pulse (Sa')                         *
-                      00028 ;            Duty cycle : 016h (0000010110b)                          *
                       00029 ;                                                                     *
                       00030 ;    PWM2 -> CCP2 (pin 35) -> Duty cycle (Sm')                        *
                       00031 ;            Duty cycle : 190h (0110010000b)                          *
@@ -3302,16 +3416,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0348   0000           00071 PWMon           nop
 0349   1597           00072                 bsf     CCP1CON,3       ; set PWM1 mode
 034A   1517           00073                 bsf     CCP1CON,2
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 57
+034B   159D           00074                 bsf     CCP2CON,3       ; set PWM2 mode
+034C   151D           00075                 bsf     CCP2CON,2
+                      00076 
+034D   1007           00077                 bcf     ENA_FET
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 59
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-034B   159D           00074                 bsf     CCP2CON,3       ; set PWM2 mode
-034C   151D           00075                 bsf     CCP2CON,2
-                      00076 
-034D   1007           00077                 bcf     ENA_FET
                       00078                 
 034E   0008           00079                 RETURN
                       00080 
@@ -3361,16 +3475,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00124 ;               IN: DUTY2_H, DUTY2_L (xxxxxxxx xx000000)
                       00125 ;**********************************************************************
                       00126 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 58
+                      00127 IncDuty         BANK1
+0363   1683               M         bsf     STATUS,5    ; Select page 1
+0364   0824           00128                 movf    STEP_L,w
+                      00129                 BANK0
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 60
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00127 IncDuty         BANK1
-0363   1683               M         bsf     STATUS,5    ; Select page 1
-0364   0824           00128                 movf    STEP_L,w
-                      00129                 BANK0
 0365   1283               M         bcf     STATUS,5    ; Select page 0
 0366   074F           00130                 addwf   DUTY2_L,W
 0367   39C0           00131                 andlw   B'11000000'     ; mask L-Byte
@@ -3420,16 +3534,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0381   084E               M           movfw     DUTY2_H
                           M           jmpWltL   0x0E,LimitIt
 0382   3C0E               M         sublw   0x0E
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 59
+                          M         skipC
+0383   1C03               M         btfss   _C
+0384   1503               M         bsf     _Z
+                          M         jmpNZ   LimitIt
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 61
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                          M         skipC
-0383   1C03               M         btfss   _C
-0384   1503               M         bsf     _Z
-                          M         jmpNZ   LimitIt
 0385   1D03               M         btfss   _Z
 0386   2???               M         goto    LimitIt
                       00164                 jmpFgeL DUTY2_L,DUTY2_MIN_L,WhitinLimit         ; consider L-Bytes
@@ -3479,16 +3593,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00025 ;**********************************************************************
                       00026 ;               INIT SPI PORT
                       00027 ;
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 60
+                      00028 ;               SPI Master, Idle high, Fosc/4, no collision
+                      00029 ;**********************************************************************
+                      00030 
+0394   1294           00031 InitSPIPort     bcf     SSPCON,SSPEN    ; disable SPI Module
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 62
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00028 ;               SPI Master, Idle high, Fosc/4, no collision
-                      00029 ;**********************************************************************
-                      00030 
-0394   1294           00031 InitSPIPort     bcf     SSPCON,SSPEN    ; disable SPI Module
                       00032 
 0395   3012           00033                 movlw   INIT_SPI        ; init SPI
 0396   0094           00034                 movwf   SSPCON
@@ -3538,16 +3652,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00076 ;**********************************************************************
                       00077 ;               WAIT SPI TRANSACTION TO BE COMPLETE
                       00078 ;**********************************************************************
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 61
+                      00079 
+03AB   0064           00080 WaitSPIExchange clrwdt                  ; reset watchdog
+03AC   08D4           00081                 movf    SPICounter,F
+03AD   1D03           00082                 btfss   STATUS,Z
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 63
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00079 
-03AB   0064           00080 WaitSPIExchange clrwdt                  ; reset watchdog
-03AC   08D4           00081                 movf    SPICounter,F
-03AD   1D03           00082                 btfss   STATUS,Z
 03AE   2???           00083                   goto  WaitSPIExchange
 03AF   0008           00084                 RETURN
                       00085 
@@ -3597,16 +3711,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 03BF   00D5           00129                 movwf   SPIBufPointer   ; set pointer at start of buffer
 03C0   0084           00130                 movwf   FSR             ; set FSR at start of buffer
 03C1   0008           00131                 RETURN
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 62
+                      00132 
+                      00133 
+                      00134 ;**********************************************************************
+                      00135 ;               INTSPI (SPI interrupt)
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 64
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00132 
-                      00133 
-                      00134 ;**********************************************************************
-                      00135 ;               INTSPI (SPI interrupt)
                       00136 ;
                       00137 ;               Occured when a byte is transmit/received in the SSBUF
                       00138 ;
@@ -3656,16 +3770,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00008 ;    Date:          13.03.01                                          *
                       00009 ;    Last Update:   28.09.01                                          *
                       00010 ;    File Version:  V3.0                                              *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 63
+                      00011 ;                                                                     *
+                      00012 ;    Author:        Michael Zürcher                                               *
+                      00013 ;                                                                     *
+                      00014 ;    Company:       HTA-Biel/Bienne Indulab                           *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 65
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00011 ;                                                                     *
-                      00012 ;    Author:        Michael Zürcher                                               *
-                      00013 ;                                                                     *
-                      00014 ;    Company:       HTA-Biel/Bienne Indulab                           *
                       00015 ;                                                                     *
                       00016 ;    Changes:       Content Improved perturbation and observation     *
                       00017 ;                   tracking method                                   *
@@ -3715,16 +3829,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00061 ;   +     -     -     -      -    I) incidense decreased meanwhile
                       00062 ;   +     -     -     +      +    J) V>Vmpp, keep decreasing delta
                       00063 ;   +     -     +     -      +    K) invalid
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 64
+                      00064 ;   +     -     +     +      +    L) invalid, cc applies
+                      00065 ;   +     +     -     -      -    M) V<Vmpp, increase delta again
+                      00066 ;   +     +     -     +      -    N) incidence increased meanwhile, cc applies
+                      00067 ;   +     +     +     -      +    O) MPP is reached, inverse delta
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 66
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00064 ;   +     -     +     +      +    L) invalid, cc applies
-                      00065 ;   +     +     -     -      -    M) V<Vmpp, increase delta again
-                      00066 ;   +     +     -     +      -    N) incidence increased meanwhile, cc applies
-                      00067 ;   +     +     +     -      +    O) MPP is reached, inverse delta
                       00068 ;   +     +     +     +      +    P) unclear, control condition applies
                       00069 ;**********************************************************************
                       00070 
@@ -3774,16 +3888,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00094                 
 03E8   2???           00095 MeasIin         call    GetFilteredIin                  ; Measure the current input current
                       00096 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 65
+03E9   2???           00097                 call    MinPower                                        ; call Minpower Test Subroutine
+                      00098 
+03EA   2???           00099                 call    SetVSFup                                        ; Prepare Voltage Signum Flags f
+                            or the Decision Tree
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 67
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-03E9   2???           00097                 call    MinPower                                        ; call Minpower Test Subroutine
-                      00098 
-03EA   2???           00099                 call    SetVSFup                                        ; Prepare Voltage Signum Flags f
-                            or the Decision Tree
 03EB   2???           00100                 call    SetPSFup                                        ; Prepare Current Signum Flags f
                             or the Decision Tree
                       00101 
@@ -3833,16 +3947,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0402   1C20           00125 PosP            btfss   VSF,0           
 0403   2???           00126                    goto NegDV
 0404   2???           00127                 goto  PosDV
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 66
+0405   1C20           00128 NegP            btfss   VSF,0
+0406   2???           00129                    goto PosDV
+0407   2???           00130                 goto  NegDV
+                      00131 ;----------------------------------------------------------------------
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 68
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0405   1C20           00128 NegP            btfss   VSF,0
-0406   2???           00129                    goto PosDV
-0407   2???           00130                 goto  NegDV
-                      00131 ;----------------------------------------------------------------------
                       00132 
                       00133                 ;P&O algorithm
                       00134 
@@ -3892,16 +4006,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00175 
                       00176 ;**********************************************************************
                       00177 ;               Actualize voltage signum Flags
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 67
+                      00178 ;
+                      00179 ;               - Result register (-------- or ++++++++) 1 = -, 0 = +
+                      00180 ;               OUT: VSF
+                      00181 ;**********************************************************************
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 69
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00178 ;
-                      00179 ;               - Result register (-------- or ++++++++) 1 = -, 0 = +
-                      00180 ;               OUT: VSF
-                      00181 ;**********************************************************************
 0420   0828           00182 SetVSFup        movf    UIF0H,W         ;compare current with former UIF_H
 0421   022A           00183                 subwf   UIF1H,W
                       00184                 
@@ -3951,16 +4065,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00224 
                       00225 
                       00098 ;Temperature Procedure
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 68
+                      00099 #include        "celsius.asm"           ; Converts temperatures to degs C
+                      00001 ;**********************************************************************
+                      00002 ;   P R O G R A M M     MPPTnG                                        *
+                      00003 ;                                                                     *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 70
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00099 #include        "celsius.asm"           ; Converts temperatures to degs C
-                      00001 ;**********************************************************************
-                      00002 ;   P R O G R A M M     MPPTnG                                        *
-                      00003 ;                                                                     *
                       00004 ;   Temperature values converter Version: Celsius                     *
                       00005 ;**********************************************************************
                       00006 ;                                                                     *
@@ -4010,16 +4124,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 044C   1C03               M         btfss   _C
 044D   2???               M         goto    C65
 044E   1903               M         btfsc   _Z
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 69
+044F   2???               M         goto    C65
+                      00029                 jmpFgeL TCL,0x46,C60
+0450   0847               M           movfw     TCL
+                          M           jmpWgeL   0x46,C60
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 71
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-044F   2???               M         goto    C65
-                      00029                 jmpFgeL TCL,0x46,C60
-0450   0847               M           movfw     TCL
-                          M           jmpWgeL   0x46,C60
 0451   3C46               M         sublw   0x46
 0452   1C03               M         btfss   _C
 0453   2???               M         goto    C60
@@ -4069,16 +4183,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0474   0847               M           movfw     TCL
                           M           jmpWgeL   0x12,C30
 0475   3C12               M         sublw   0x12
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 70
+0476   1C03               M         btfss   _C
+0477   2???               M         goto    C30
+0478   1903               M         btfsc   _Z
+0479   2???               M         goto    C30
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 72
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0476   1C03               M         btfss   _C
-0477   2???               M         goto    C30
-0478   1903               M         btfsc   _Z
-0479   2???               M         goto    C30
                       00036                 jmpFgeL TCL,0x11,C25
 047A   0847               M           movfw     TCL
                           M           jmpWgeL   0x11,C25
@@ -4128,16 +4242,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                           M           jmpWgeL   0xA6,NoCels
 049B   3CA6               M         sublw   0xA6
 049C   1C03               M         btfss   _C
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 71
+049D   2???               M         goto    NoCels
+049E   1903               M         btfsc   _Z
+049F   2???               M         goto    NoCels
+                      00046                 jmpFgeL TAMBL,0xA3,C90
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 73
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-049D   2???               M         goto    NoCels
-049E   1903               M         btfsc   _Z
-049F   2???               M         goto    NoCels
-                      00046                 jmpFgeL TAMBL,0xA3,C90
 04A0   0843               M           movfw     TAMBL
                           M           jmpWgeL   0xA3,C90
 04A1   3CA3               M         sublw   0xA3
@@ -4187,16 +4301,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 04C3   2???               M         goto    C65
                       00052                 jmpFgeL TAMBL,0x8C,C60
 04C4   0843               M           movfw     TAMBL
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 72
+                          M           jmpWgeL   0x8C,C60
+04C5   3C8C               M         sublw   0x8C
+04C6   1C03               M         btfss   _C
+04C7   2???               M         goto    C60
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 74
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                          M           jmpWgeL   0x8C,C60
-04C5   3C8C               M         sublw   0x8C
-04C6   1C03               M         btfss   _C
-04C7   2???               M         goto    C60
 04C8   1903               M         btfsc   _Z
 04C9   2???               M         goto    C60
                       00053                 jmpFgeL TAMBL,0x88,C55
@@ -4246,16 +4360,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 04EA   1C03               M         btfss   _C
 04EB   2???               M         goto    C30
 04EC   1903               M         btfsc   _Z
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 73
+04ED   2???               M         goto    C30
+                      00059                 jmpFgeL TAMBL,0x70,C25
+04EE   0843               M           movfw     TAMBL
+                          M           jmpWgeL   0x70,C25
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 75
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-04ED   2???               M         goto    C30
-                      00059                 jmpFgeL TAMBL,0x70,C25
-04EE   0843               M           movfw     TAMBL
-                          M           jmpWgeL   0x70,C25
 04EF   3C70               M         sublw   0x70
 04F0   1C03               M         btfss   _C
 04F1   2???               M         goto    C25
@@ -4305,16 +4419,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0517   302D           00087 C45     movlw   0x2D
 0518   0008           00088         RETURN
 0519   3028           00089 C40     movlw   0x28
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 74
+051A   0008           00090         RETURN
+051B   3023           00091 C35     movlw   0x23
+051C   0008           00092         RETURN
+051D   301E           00093 C30     movlw   0x1E
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 76
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-051A   0008           00090         RETURN
-051B   3023           00091 C35     movlw   0x23
-051C   0008           00092         RETURN
-051D   301E           00093 C30     movlw   0x1E
 051E   0008           00094         RETURN
 051F   3019           00095 C25     movlw   0x19
 0520   0008           00096         RETURN
@@ -4364,16 +4478,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00037                 jmpFltL UIF0H,MINUINH,CV_UVState1       ; jmp, if minimal voltage not reached
 052E   0828               M           movfw     UIF0H
                           M           jmpWltL   0x00,CV_UVState1
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 75
+052F   3C00               M         sublw   0x00
+                          M         skipC
+0530   1C03               M         btfss   _C
+0531   1503               M         bsf     _Z
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 77
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-052F   3C00               M         sublw   0x00
-                          M         skipC
-0530   1C03               M         btfss   _C
-0531   1503               M         bsf     _Z
                           M         jmpNZ   CV_UVState1
 0532   1D03               M         btfss   _Z
 0533   2???               M         goto    CV_UVState1
@@ -4423,16 +4537,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0551   0271               M         subwf   Temp0,W
                           M         skipC
 0552   1C03               M         btfss   _C
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 76
+0553   1503               M         bsf     _Z
+                          M         jmpNZ   BoostALittle
+0554   1D03               M         btfss   _Z
+0555   2???               M         goto    BoostALittle
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 78
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0553   1503               M         bsf     _Z
-                          M         jmpNZ   BoostALittle
-0554   1D03               M         btfss   _Z
-0555   2???               M         goto    BoostALittle
 0556   0834           00069                 movf    UOFH,W
                       00070                 jmpWgtF Temp0,Wait4Connect                      ; go on, if ouput voltage exceeded
 0557   0271               M         subwf   Temp0,W
@@ -4482,16 +4596,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00104 
 0573   3002           00105                 movlw   MAXUOH
 0574   00F2           00106                 movwf   Temp1
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 77
+0575   0834           00107                 movf    UOFH,w                                  
+0576   0272           00108                 subwf   Temp1,w
+0577   1903           00109                 btfsc   _Z
+0578   2???           00110                         goto    CheckLsb2
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 79
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0575   0834           00107                 movf    UOFH,w                                  
-0576   0272           00108                 subwf   Temp1,w
-0577   1903           00109                 btfsc   _Z
-0578   2???           00110                         goto    CheckLsb2
 0579   1C03           00111                 btfss   _C                                                      ;c set if w=MAXUOH-UOFH 
                             >=0
 057A   2???           00112                         goto    PreCharge
@@ -4541,16 +4655,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00136 
 0594   2???           00137                 call    GetFilteredUin                          ;check Uin and transform in to 8bit valu
                             e
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 78
+0595   0CA8           00138                 rrf             UIF0H,F 
+0596   0CA9           00139                 rrf             UIF0L,F
+0597   0CA8           00140                 rrf             UIF0H,F
+0598   0CA9           00141                 rrf             UIF0L,F
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 80
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0595   0CA8           00138                 rrf             UIF0H,F 
-0596   0CA9           00139                 rrf             UIF0L,F
-0597   0CA8           00140                 rrf             UIF0H,F
-0598   0CA9           00141                 rrf             UIF0L,F
 0599   3053           00142                 movlw   0x53                                            ;50V @ 8bit ADC
 059A   0229           00143                 subwf   UIF0L,w                                         ;UIFOL-50V<0?
 059B   1C03           00144                 btfss   STATUS,C                                        ; c set if UIF0L-50V>0
@@ -4600,16 +4714,16 @@ Message[305]: Using default destination of 1 (file).
 05BD   1803           00185                 btfsc   STATUS, C               ; is result of subtraction negative?
 05BE   2???           00186           goto  Overflow    
 05BF                  00187 CheckMSB
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 79
+05BF   0834           00188                 movfw   UOFH                            ; compare Uout_old High Byte to Uout High Byte T
+                            emp0=Temp0-UOFH
+05C0   07F1           00189                 addwf   Temp0,F
+05C1   1C03           00190                 btfss   STATUS,C                        ;is result of subtraction negativ?
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 81
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-05BF   0834           00188                 movfw   UOFH                            ; compare Uout_old High Byte to Uout High Byte T
-                            emp0=Temp0-UOFH
-05C0   07F1           00189                 addwf   Temp0,F
-05C1   1C03           00190                 btfss   STATUS,C                        ;is result of subtraction negativ?
 05C2   2???           00191                         goto    Twocomplement
                       00192 
 05C3                  00193 Checkdelta
@@ -4659,16 +4773,16 @@ Message[305]: Using default destination of 1 (file).
 05E3   0008           00234                 RETURN
                       00235 
                       00236 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 80
+                      00237                 
+                      00103 #include        "noload.asm"            ; no load at output
+                      00001 ;**********************************************************************
+                      00002 ;   P R O G R A M M     MPPTnG                                        *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 82
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00237                 
-                      00103 #include        "noload.asm"            ; no load at output
-                      00001 ;**********************************************************************
-                      00002 ;   P R O G R A M M     MPPTnG                                        *
                       00003 ;                                                                     *
                       00004 ;   Traking program for MPPT new generation                           *
                       00005 ;**********************************************************************
@@ -4718,16 +4832,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 05F2   2???               M         goto    DeCharge
                       00035                 jmpFleL UOFL,MAXUOL,ResNOC      ; consider L-Byte
 05F3   0835               M           movfw     UOFL
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 81
+                          M           jmpWleL   0x82,ResNOC
+05F4   3C82               M         sublw   0x82
+05F5   1803               M         btfsc   _C
+05F6   2???               M         goto    ResNOC
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 83
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                          M           jmpWleL   0x82,ResNOC
-05F4   3C82               M         sublw   0x82
-05F5   1803               M         btfsc   _C
-05F6   2???               M         goto    ResNOC
                       00036 
 05F7   2???           00037                 goto    DeCharge        
                       00038 
@@ -4777,16 +4891,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00030                 jmpFltL UIF0H,MINUINH,UnderVoltageloop  ; jmp, if minimal voltage not reached
 0601   0828               M           movfw     UIF0H
                           M           jmpWltL   0x00,UnderVoltageloop
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 82
+0602   3C00               M         sublw   0x00
+                          M         skipC
+0603   1C03               M         btfss   _C
+0604   1503               M         bsf     _Z
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 84
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0602   3C00               M         sublw   0x00
-                          M         skipC
-0603   1C03               M         btfss   _C
-0604   1503               M         bsf     _Z
                           M         jmpNZ   UnderVoltageloop
 0605   1D03               M         btfss   _Z
 0606   2???               M         goto    UnderVoltageloop
@@ -4836,16 +4950,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00015 ;                                                                     *
                       00016 ;    Changes:       program part which waits for sufficient input     *
                       00017 ;                   voltage                                           *
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 83
+                      00018 ;                                                                     *
+                      00019 ;**********************************************************************
+                      00020 ;                                                                     *
+                      00021 ;    Notes:                                                           *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 85
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00018 ;                                                                     *
-                      00019 ;**********************************************************************
-                      00020 ;                                                                     *
-                      00021 ;    Notes:                                                           *
                       00022 ;    - Main program : mpptngv4.asm                                    *
                       00023 ;                                                                     *
                       00024 ;**********************************************************************
@@ -4895,16 +5009,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0636   1D03           00046                 btfss   _Z
 0637   03A2           00047                    decf    PminCounter,F
                       00048                 BANK0
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 84
+0638   1283               M         bcf     STATUS,5    ; Select page 0
+                      00049 
+0639   0000           00050 RetFromPMin     nop
+063A   0008           00051                 RETURN
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 86
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0638   1283               M         bcf     STATUS,5    ; Select page 0
-                      00049 
-0639   0000           00050 RetFromPMin     nop
-063A   0008           00051                 RETURN
                       00052                 
                       00053 
                       00054 
@@ -4954,16 +5068,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 Message[305]: Using default destination of 1 (file).
 0647   0AF7           00041                         incf    Temp5
                       00042                 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 85
+0648   0877           00043                 movfw   Temp5
+0649   00F2           00044                 movwf   Temp1
+064A   0834           00045                 movf    UOFH,w                                  
+064B   0272           00046                 subwf   Temp1,w
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 87
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0648   0877           00043                 movfw   Temp5
-0649   00F2           00044                 movwf   Temp1
-064A   0834           00045                 movf    UOFH,w                                  
-064B   0272           00046                 subwf   Temp1,w
 064C   1903           00047                 btfsc   _Z
 064D   2???           00048                         goto    CheckLsb21
 064E   1C03           00049                 btfss   _C                                                      ;c set if w=MAXUOH-UOFH 
@@ -5013,16 +5127,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0669   3CDE               M         sublw   0xDE
 066A   1803               M         btfsc   _C
 066B   2???               M         goto    CV_UVState3
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 86
+066C   2???           00075                 goto    CV_MeasUout3
+                      00076 
+066D   2???           00077 CV_UVState3     call    UnderVoltage
+066E                  00078 CV_MeasUout3
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 88
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-066C   2???           00075                 goto    CV_MeasUout3
-                      00076 
-066D   2???           00077 CV_UVState3     call    UnderVoltage
-066E                  00078 CV_MeasUout3
                       00079 
 066E   2???           00080                 call    GetFilteredUout
                       00081 
@@ -5072,16 +5186,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0688   3C00               M         sublw   0x00
                           M         skipC
 0689   1C03               M         btfss   _C
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 87
+068A   1503               M         bsf     _Z
+                          M         jmpNZ   CV_UVState
+068B   1D03               M         btfss   _Z
+068C   2???               M         goto    CV_UVState
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 89
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-068A   1503               M         bsf     _Z
-                          M         jmpNZ   CV_UVState
-068B   1D03               M         btfss   _Z
-068C   2???               M         goto    CV_UVState
                       00103                 jmpFgtL UIF0H,MINUINH,CV_MeasUout       ; go on, if minimal reached
 068D   0828               M           movfw     UIF0H
                           M           jmpWgtL   0x00,CV_MeasUout
@@ -5131,16 +5245,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 06A9   2???           00120                 goto    Wait4Connect1
                       00121         
                       00122 ;**********************************************************************
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 88
+                      00107 #include        "overtemp.asm"          ; 
+                      00001 ;**********************************************************************
+                      00002 ;   P R O G R A M M     MPPTnG                                            *
+                      00003 ;                                                                     *
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 90
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00107 #include        "overtemp.asm"          ; 
-                      00001 ;**********************************************************************
-                      00002 ;   P R O G R A M M     MPPTnG                                            *
-                      00003 ;                                                                     *
                       00004 ;   Undervoltage routine                                                                  *
                       00005 ;**********************************************************************
                       00006 ;                                                                     *
@@ -5190,16 +5304,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                           M         jmpNZ   OT_UVState
 06B7   1D03               M         btfss   _Z
 06B8   2???               M         goto    OT_UVState
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 89
+                      00042                 jmpFgtL UIF0H,MINUINH,OT_MeasTemp       ; go on, if minimal reached
+06B9   0828               M           movfw     UIF0H
+                          M           jmpWgtL   0x00,OT_MeasTemp
+06BA   3C00               M         sublw   0x00
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 91
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00042                 jmpFgtL UIF0H,MINUINH,OT_MeasTemp       ; go on, if minimal reached
-06B9   0828               M           movfw     UIF0H
-                          M           jmpWgtL   0x00,OT_MeasTemp
-06BA   3C00               M         sublw   0x00
 06BB   1C03               M         btfss   _C
 06BC   2???               M         goto    OT_MeasTemp
                       00043                 jmpFleL UIF0L,MINUINL,OT_UVState        ; consider L-Byte
@@ -5249,16 +5363,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 06D5   2???           00116                 call    InitADC                 ; Initialize A/D Converters
                       00117 
 06D6   1D06           00118                 btfss   CAN_PRE                 ; skip next line if CAN_PRE = 0
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 90
+06D7   2???           00119                 goto    monOVC1
+06D8   0808           00120                 movf    PORTD,W                 ; read A0-A3
+06D9   390F           00121                 andlw   B'00001111'             ; mask A0-A3 Bits
+06DA   1903           00122                 btfsc   _Z      
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 92
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-06D7   2???           00119                 goto    monOVC1
-06D8   0808           00120                 movf    PORTD,W                 ; read A0-A3
-06D9   390F           00121                 andlw   B'00001111'             ; mask A0-A3 Bits
-06DA   1903           00122                 btfsc   _Z      
 06DB   2???           00123             goto        monOVC1
 06DC   2???           00124         call    InitCAN                 ; Initialize SPI-Bus & CAN module
                       00125 
@@ -5308,16 +5422,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00168 ; Overheat
                       00169 ;----------------------------------------------------------------------
                       00170 
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 91
+06F8   1388           00171 OVH_LOOP1       bcf     RES_OVH                 ; Reset OVH-Flip-Flop
+06F9   2???           00172                         call    wait20ms
+06FA   1788           00173                         bsf     RES_OVH
+                      00174 
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 93
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-06F8   1388           00171 OVH_LOOP1       bcf     RES_OVH                 ; Reset OVH-Flip-Flop
-06F9   2???           00172                         call    wait20ms
-06FA   1788           00173                         bsf     RES_OVH
-                      00174 
                       00175 ;----------------------------------------------------------------------
                       00176 
 06FB   2???           00177 PWM                     call    InitPWM         ; Initialize PWMs modules
@@ -5347,7 +5461,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0701   2???           00199                         goto    TrackingLoop
                       00200 
 3F36                  00201                         END                                     ; directive 'end of program'
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 92
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 94
 
 
 SYMBOL TABLE
@@ -5406,7 +5520,7 @@ C95                               00000503
 CANCTRL                           0x0F
 CANCTRL1                          0x1F
 CANCTRL2                          0x2F
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 93
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 95
 
 
 SYMBOL TABLE
@@ -5465,7 +5579,7 @@ CHANNEL6                          B'10110000'
 CHS0                              00000003
 CHS1                              00000004
 CHS2                              00000005
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 94
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 96
 
 
 SYMBOL TABLE
@@ -5524,7 +5638,7 @@ EEDATA                            0000010C
 EEDATH                            0000010E
 EEIE                              00000004
 EEIF                              00000004
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 95
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 97
 
 
 SYMBOL TABLE
@@ -5583,7 +5697,7 @@ INITDUTY                          0x74
 INIT_IO_A                         B'00101111'
 INIT_IO_AD                        B'10000001'
 INIT_IO_B                         B'00111101'
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 96
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 98
 
 
 SYMBOL TABLE
@@ -5642,7 +5756,7 @@ MXXX                              0000040B
 Main                              000006D4
 MeasIin                           000003E8
 MeasStableUs                      0000052D
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 97
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 99
 
 
 SYMBOL TABLE
@@ -5701,7 +5815,7 @@ PCON_P                            0000000E
 PEIE                              00000006
 PEN                               00000002
 PERIODE                           0xCF
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 98
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 100
 
 
 SYMBOL TABLE
@@ -5760,7 +5874,7 @@ RD                                00000000
 READ2510                          0x03
 READ_WRITE                        00000002
 REC                               0x1D
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 99
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 101
 
 
 SYMBOL TABLE
@@ -5819,7 +5933,7 @@ RXF1SIDL                          0x05
 RXF2EID0                          0x0B
 RXF2EID8                          0x0A
 RXF2SIDH                          0x08
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 100
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 102
 
 
 SYMBOL TABLE
@@ -5878,7 +5992,7 @@ SSPADD_P                          00000013
 SSPBUF                            00000013
 SSPCON                            00000014
 SSPCON2                           00000091
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 101
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 103
 
 
 SYMBOL TABLE
@@ -5937,7 +6051,7 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2ON                            00000002
 TOUTPS0                           00000003
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 102
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 104
 
 
 SYMBOL TABLE
@@ -5996,7 +6110,7 @@ TXB2CTRL                          0x50
 TXB2D0                            0x56
 TXB2D1                            0x57
 TXB2D2                            0x58
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 103
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 105
 
 
 SYMBOL TABLE
@@ -6055,7 +6169,7 @@ UO3H                              00000032
 UO3L                              00000033
 UOFH                              00000034
 UOFL                              00000035
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 104
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 106
 
 
 SYMBOL TABLE
@@ -6114,7 +6228,7 @@ _CCP1IF                           PIR1,CCP1IF
 _CPD_OFF                          00003FFF
 _CPD_ON                           00003EFF
 _CP_ALL                           00000FCF
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 105
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 107
 
 
 SYMBOL TABLE
@@ -6173,7 +6287,7 @@ jmpFeqF
 jmpFeqL                           
 jmpFeqZ                           
 jmpFgeL                           
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 106
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 108
 
 
 SYMBOL TABLE
@@ -6232,7 +6346,7 @@ trABTF2                           TXB2CTRL,6
 trB0BFE                           BFPCTRL,2
 trB0BFM                           BFPCTRL,0
 trB0BFS                           BFPCTRL,4
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 107
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 109
 
 
 SYMBOL TABLE
@@ -6291,7 +6405,7 @@ trREQOP1                          CANCTRL,6
 trREQOP2                          CANCTRL,7
 trRX0IE                           CANINTE,0
 trRX0IF                           CANINTF,0
-MPASM  5.51                      MPPTNGV6.ASM   7-30-2015  10:31:37         PAGE 108
+MPASM  5.43                      MPPTNGV6.ASM   9-26-2015  18:01:34         PAGE 110
 
 
 SYMBOL TABLE
