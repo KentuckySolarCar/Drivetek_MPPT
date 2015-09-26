@@ -64,17 +64,62 @@ SPI_WriteD	MACRO	Reg,RegData
 ;**********************************************************************
 ;		INIT MCP2510 CAN-Controller
 ;
-;		Physical layer configuration:
+;   125 kbps (NOT CURRENT SET UP!) Example setup used on page 38
+;	Physical layer configuration:
 ;		- Fosc       = 20 MHz
-;		- BRP        = 10
+;                          Tosc = 50 ns
+;		- BRP        = 10  
+;                          TQ = (1/Fosc) * Brp = (1/20M) * (10) = 5* 10^6 = 500 ns
+;                          125k =1/(500 ns * 16)
+;                          We need 16 TQs to get a speed of 125k
 ;		- Sync Seg   = 1 Tq
+;							hardware seg
 ;		- Prop Seg   = 2 Tq
+;							really 7 Tq
+;							For clarity, the value of prop seg is 6, however this is 7 TQs
 ;		- Phase Seg1 = 3 Tq
+;							really 2 Tq
+;							For clarity, the value of seg1 seg is 1, however this is 2 TQs
 ;		- Phase Seg2 = 3 Tq
+;							really 6 tq?
+;							the value is 5, but this is 6 TQs
 ;		- SJW        = 1 Tq
+;							really 0
 ;		- Bus line is sampled once at the sample point
 ;		- wake-up filter disable
+;      1+7+2+6 = 16 Qt, just what we needed ;)
+
+;        three config bytes used for 125kps are below;
+;		SPI_WriteL CNF1,B'00000100'	; config register 1 of MCP2510 (Bitiming)
+;		SPI_WriteL CNF2,B'10001110'	; config register 2 of MCP2510
+;		SPI_WriteL CNF3,B'00000101'	; config register 3 of MCP2510
+
+
+;
+;   500 kbps (page 39)
+;	Physical layer configuration:
+;		- Fosc       = 20 MHz
+;                          Tosc = 50 ns
+;		- BRP        = 4
+;						brp value will be 1
+;						tq = tosc * brp = 50 ns * 4 = 200 ns;
+;						500k = 1 /( 200 * x)
+;		- Sync Seg   = 1 Tq
+;						hardware seg
+;		- Prop Seg   = 2 Tq  value 1
+;		- Phase Seg1 = 2 Tq	 value 1
+;		- Phase Seg2 = 5 Tq  value 4
+;		- Bus line is sampled once at the sample point
+;		- wake-up filter disable
+
+;		SPI_WriteL CNF1,B'00000001'	; config register 1 of MCP2510 (Bitiming)
+;		SPI_WriteL CNF2,B'10001001'	;  config register 2 of MCP2510
+;		SPI_WriteL CNF3,B'00000100'	; config register 3 of MCP2510
 ;**********************************************************************
+
+
+
+
 
 Init2510	call	Reset2510
 
@@ -85,11 +130,18 @@ Init2510	call	Reset2510
 		movlw	CANCTRL		; CAN control register of MCP2510
 		call	BitMod2510
 
-		SPI_WriteL CNF1,B'00000100'	; config register 1 of MCP2510 (Bitiming)
+		SPI_WriteL CNF1,B'00000001'	; config register 1 of MCP2510 (Bitiming)
+;								swj =0 
+;								brp = 1
+		SPI_WriteL CNF2,B'10001001'	;  config register 2 of MCP2510
+;								BTLMODE = 1
+;								SAM = 0
+;								PHSEG1 = 1
+;								PRSEG = 1
 
-		SPI_WriteL CNF2,B'10001110'	; config register 2 of MCP2510
-
-		SPI_WriteL CNF3,B'00000101'	; config register 3 of MCP2510
+		SPI_WriteL CNF3,B'00000100'	; config register 3 of MCP2510
+;								WAKFIL = 0
+;								PHSEG2 = 4
 
 		SPI_WriteL CANINTE, B'00000000' ; int on RX0 full
 						; no int on TX0/1/2 empty  
