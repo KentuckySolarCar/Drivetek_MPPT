@@ -27,17 +27,17 @@
 
 
 ;--------------------------
-;John Broadbent University Of Kentucky Solar Car Team (UKSC)
+;Chris Heintz University Of Kentucky Solar Car Team (UKSC)
 ;We downloaded this code from UC Berkly (CalSol), with the goal of useing this to change the operating point for our trackers.
 ;The p16f877 has serveral 10 bit adc's, and the MPPT send can messages with a 10 bit voltage.
-;The target operating points are below
-;Minimum Input Voltage [V]  37.79
-;Maximum Input Voltage [V]  69.37
-;Nominal Battery Voltage [V]  132
-;Minimum Output Voltage [V]  90
-;Maximum Output Voltage [V]  148 
-;Maximum Input MPP Current [A] 5.79
-;Maximum Input Short Circuit Current [A] 6.22
+;The target operating points for NJIT are below
+;Minimum Input Voltage [V]  36
+;Maximum Input Voltage [V]  86.4
+;Estimated MPP Voltage [V] 71.2
+;Nominal Battery Voltage [V]  74
+;Minimum Output Voltage [V]  54
+;Maximum Output Voltage [V]  80 
+;
 ; 
 ; and the volts to count (for the version 4 from the PDF)are 
 ;Input voltage multiplication factor: 150.49 [mV/LSB]
@@ -58,9 +58,9 @@
 
 ;UKSC new values (JB)
 ; (target voltage) / ( mV per Count) = number of counts needed 
-;( 148 volts / 208.79mV per Count) = 709 Counts = 0x02c4
-#define MAXUOH      0x02
-#define MAXUOL      0xc4
+;( 80 volts / 208.79mV per Count) = 384 Counts = 0x0180
+#define MAXUOH      0x01
+#define MAXUOL      0x80
 
 
 ;**********************************************************************
@@ -72,10 +72,10 @@
 
 ;UKSC new values (JB)
 ;(target Voltage) / (mV per Count) = number of counts needed
-;(37.79 votls) / ( 150.49 mV / per count) = 251 = 0x00FB
+;(36 volts) / ( 150.49 mV / per count) = 239 = 0x00EF
 
 #define MINUINH 0x00
-#define MINUINL	0xFB
+#define MINUINL	0xEF
 ;**********************************************************************
 ;Min Output Voltage, used for Precharge
 ;**********************************************************************
@@ -84,9 +84,9 @@
 
 ;UKSC new values (JB)
 ;(target Voltage) / (mV per Count) = number of counts needed
-;(90 volts) / (208.79 mV perCount) = 433  = 0x01b1
+;(54 volts) / (208.79 mV perCount) = 259  = 0x0103
 #define MINUBATH   0x01
-#define MINUBATL   0xb1
+#define MINUBATL   0x03
 ;**********************************************************************
 ;   border ot discontinuous mode 
 ;   ON-Values have to be greater than OFF-Values
@@ -115,8 +115,8 @@
 ;UKSC new values (JB)
 
 ;(target Voltage) / (mV per Count) = number of counts needed
-;( 69.37 volts) / (150.49 mV perCount) = 461 = 0x01CD
+;( 71.2 volts) / (150.49 mV perCount) = 474 = 0x01DA
 
 #define UmppH 0x01      
-#define UmppL 0xCD	                                                                                                                                                                                                                                                                                                            
+#define UmppL 0xDA	                                                                                                                                                                                                                                                                                                            
 
